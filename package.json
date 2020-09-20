@@ -34,6 +34,7 @@
     "build": "yarn build:lib && yarn build:dist && yarn build:flow && yarn build:typescript",
     "prebuild:lib": "shx rm -rf lib/*",
     "build:lib": "cross-env BABEL_ENV=cjs babel --out-dir lib src --ignore test.js",
+    "commit": "cz",
     "prebuild:umd": "shx rm -rf dist/*",
     "prebuild:dist": "shx rm -rf dist/*",
     "build:dist": "rollup -c",
@@ -75,6 +76,7 @@
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "babel-plugin-preval": "5.0.0",
+    "commitizen": "^4.2.1",
     "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^7.2.0",
@@ -100,7 +102,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "jest": {
