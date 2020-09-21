@@ -5634,12 +5634,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ease-in-out-91d48e@workspace:packages/ease-in-out":
-  version: 0.0.0-use.local
-  resolution: "ease-in-out-91d48e@workspace:packages/ease-in-out"
-  languageName: unknown
-  linkType: soft
-
 "ecc-jsbn@npm:~0.1.1":
   version: 0.1.2
   resolution: "ecc-jsbn@npm:0.1.2"
@@ -7278,6 +7272,12 @@ fsevents@^1.2.7:
   languageName: unknown
   linkType: soft
 
+"helper-ease-in-out-345d71@workspace:packages/helper-ease-in-out":
+  version: 0.0.0-use.local
+  resolution: "helper-ease-in-out-345d71@workspace:packages/helper-ease-in-out"
+  languageName: unknown
+  linkType: soft
+
 "helper-ease-out-41a978@workspace:packages/helper-ease-out":
   version: 0.0.0-use.local
   resolution: "helper-ease-out-41a978@workspace:packages/helper-ease-out"
@@ -7293,6 +7293,12 @@ fsevents@^1.2.7:
 "helper-get-value-and-unit-70b11c@workspace:packages/helper-get-value-and-unit":
   version: 0.0.0-use.local
   resolution: "helper-get-value-and-unit-70b11c@workspace:packages/helper-get-value-and-unit"
+  languageName: unknown
+  linkType: soft
+
+"helper-important-11d49e@workspace:packages/helper-important":
+  version: 0.0.0-use.local
+  resolution: "helper-important-11d49e@workspace:packages/helper-important"
   languageName: unknown
   linkType: soft
 
