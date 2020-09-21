@@ -1,6 +1,5 @@
 {
   "name": "polished",
-  "version": "4.0.0-beta.1",
   "description": "A lightweight toolset for writing styles in Javascript.",
   "license": "MIT",
   "author": "Brian Hough <hello@brianhough.net> (https://polished.js.org)",
@@ -48,6 +47,9 @@
     "prepare": "yarn build && yarn typescript",
     "semantic-release": "semantic-release"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "lint-staged": {
     "src/**/*.js": [
       "prettier --write",
