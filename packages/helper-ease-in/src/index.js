@@ -1,5 +1,5 @@
 // @flow
-import type { TimingFunction } from '../types/timingFunction'
+import type { TimingFunction } from '../../types/timingFunction'
 
 const functionsMap = {
   back: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',

@@ -1,5 +1,5 @@
 // @flow
-import math from '../math'
+import math from '../src'
 import exponential from '../presets/exponentialSymbols'
 
 describe('math', () => {
@@ -79,7 +79,7 @@ describe('math', () => {
   it('should be able to process parentheses', () => {
     expect(math('(1rem + 2rem) * 5')).toEqual(`${(1 + 2) * 5}rem`)
     expect(math('(4em + 2)  * 5em + sqrt(4em - 2 / 5em)', exponential)).toEqual(
-      `${(4 + 2) * 5 + Math.sqrt(4 - 2 / 5)}em`,
+      `${(4 + 2) * 5 + Math.sqrt(4 - 2 / 5)}em`
     )
   })
 

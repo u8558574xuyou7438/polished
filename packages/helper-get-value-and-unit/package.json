@@ -1,15 +1,19 @@
 {
+  "name": "@polished/helper-get-value-and-unit",
   "version": "5.0.0",
   "description": "",
+  "main": "src/index.js",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/styled-components/polished.git"
+    "url": "git+https://github.com/styled-components/polished.git",
+    "directory": "packages/helper-get-value-and-unit"
   },
   "keywords": [
     "styled-components",
@@ -21,10 +25,6 @@
     "react",
     "flow",
     "typescript",
-    "color manipulate",
-    "color manipulation",
-    "curried color manipulation",
-    "color",
-    "colour"
+    "animation"
   ]
 }

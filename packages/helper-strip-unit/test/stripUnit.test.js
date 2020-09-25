@@ -1,5 +1,5 @@
 // @flow
-import stripUnit from '../stripUnit'
+import stripUnit from '../src'
 
 describe('stripUnit', () => {
   it('should strip px from whole values', () => {

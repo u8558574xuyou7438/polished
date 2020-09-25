@@ -1,5 +1,5 @@
 // @flow
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
 const cssVariableRegex = /--[\S]*/g
 
@@ -25,7 +25,7 @@ const cssVariableRegex = /--[\S]*/g
  */
 export default function cssVar(
   cssVariable: string,
-  defaultValue?: string | number,
+  defaultValue?: string | number
 ): string | number {
   if (!cssVariable || !cssVariable.match(cssVariableRegex)) {
     throw new PolishedError(73)

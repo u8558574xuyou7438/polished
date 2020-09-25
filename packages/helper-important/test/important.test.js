@@ -1,6 +1,6 @@
 // @flow
-import important from '../important'
-import cover from '../../mixins/cover'
+import important from '../src'
+import cover from '@polished/mixin-cover'
 
 describe('important', () => {
   it('should add !important to a single rule in a flat style block', () => {
@@ -20,7 +20,7 @@ describe('important', () => {
       important({
         color: 'red',
         background: 'blue',
-      }),
+      })
     ).toEqual({
       background: 'blue !important',
       color: 'red !important',
@@ -34,8 +34,8 @@ describe('important', () => {
           color: 'red',
           background: 'blue',
         },
-        'color',
-      ),
+        'color'
+      )
     ).toEqual({
       background: 'blue',
       color: 'red !important',
@@ -49,8 +49,8 @@ describe('important', () => {
           color: 'red',
           background: 'blue',
         },
-        ['color'],
-      ),
+        ['color']
+      )
     ).toEqual({
       background: 'blue',
       color: 'red !important',
@@ -65,8 +65,8 @@ describe('important', () => {
           background: 'blue',
           height: '100px',
         },
-        ['color', 'height'],
-      ),
+        ['color', 'height']
+      )
     ).toEqual({
       background: 'blue',
       color: 'red !important',
@@ -84,8 +84,8 @@ describe('important', () => {
             color: 'red',
           },
         },
-        ['color', 'height'],
-      ),
+        ['color', 'height']
+      )
     ).toEqual({
       background: 'blue',
       div: {
@@ -123,8 +123,8 @@ describe('important', () => {
           background: 'blue',
           height: '100px',
         },
-        ['width', 'fontSize'],
-      ),
+        ['width', 'fontSize']
+      )
     ).toEqual({
       background: 'blue',
       color: 'red',

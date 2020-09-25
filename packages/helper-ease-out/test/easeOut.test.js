@@ -1,5 +1,5 @@
 // @flow
-import easeOut from '../easeOut'
+import easeOut from '../src'
 
 describe('easeOut', () => {
   it('should return easeOutBack cubic-bezier', () => {

@@ -1,6 +1,6 @@
 // @flow
 import defaultSymbolMap from './presets/defaultSymbols'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
 const unitRegExp = /((?!\w)a|na|hc|mc|dg|me[r]?|xe|ni(?![a-zA-Z])|mm|cp|tp|xp|q(?!s)|hv|xamv|nimv|wv|sm|s(?!\D|$)|ged|darg?|nrut)/g
 
@@ -39,7 +39,7 @@ function calculate(expression: string, additionalSymbols?: Object): number {
         .map(val => val.regSymbol)
         .join('|')
     }|(\\S)`,
-    'g',
+    'g'
   )
   pattern.lastIndex = 0 // Reset regular expression object
 

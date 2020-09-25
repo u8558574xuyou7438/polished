@@ -1,5 +1,5 @@
 // @flow
-import cssVar from '../cssVar'
+import cssVar from '../src'
 
 beforeAll(() => {
   // $FlowFixMe

@@ -1,6 +1,6 @@
 // @flow
-import getValueAndUnit from './getValueAndUnit'
-import PolishedError from '../internalHelpers/_errors'
+import getValueAndUnit from '@polished/helper-get-value-and-unit'
+import PolishedError from '../../internals/_errors'
 
 import type { ModularScaleRatio } from '../types/modularScaleRatio'
 
@@ -52,7 +52,7 @@ function getRatio(ratioName: string): number {
 export default function modularScale(
   steps: number,
   base?: number | string = '1em',
-  ratio?: ModularScaleRatio = 1.333,
+  ratio?: ModularScaleRatio = 1.333
 ): string {
   if (typeof steps !== 'number') {
     throw new PolishedError(42)
