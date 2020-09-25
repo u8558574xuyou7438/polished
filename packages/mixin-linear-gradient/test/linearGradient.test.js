@@ -1,5 +1,5 @@
 // @flow
-import linearGradient from '../linearGradient'
+import linearGradient from '../src'
 
 describe('linearGradient', () => {
   it('returns the correct object when only passed two color stops, including parsed fallback with no percentage', () => {

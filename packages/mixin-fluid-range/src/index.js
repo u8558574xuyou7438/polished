@@ -1,9 +1,9 @@
 // @flow
 import between from './between'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-import type { FluidRangeConfiguration } from '../types/fluidRangeConfiguration'
-import type { Styles } from '../types/style'
+import type { FluidRangeConfiguration } from '../../types/fluidRangeConfiguration'
+import type { Styles } from '../../types/style'
 
 /**
  * Returns a set of media queries that resizes a property (or set of properties) between a provided fromSize and toSize. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px') to constrain the interpolation.
@@ -50,7 +50,7 @@ import type { Styles } from '../types/style'
 export default function fluidRange(
   cssProp: Array<FluidRangeConfiguration> | FluidRangeConfiguration,
   minScreen?: string = '320px',
-  maxScreen?: string = '1200px',
+  maxScreen?: string = '1200px'
 ): Styles {
   if ((!Array.isArray(cssProp) && typeof cssProp !== 'object') || cssProp === null) {
     throw new PolishedError(49)

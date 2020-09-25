@@ -1,5 +1,5 @@
 // @flow
-import between from '../between'
+import between from '../src'
 
 describe('between', () => {
   it('should return a valid calc formula when passed min/max screen sizes', () => {
@@ -16,7 +16,7 @@ describe('between', () => {
       // $FlowFixMe
       between('20px', '100px', 400, 1000)
     }).toThrow(
-      'minScreen and maxScreen must be provided as stringified numbers with the same units.',
+      'minScreen and maxScreen must be provided as stringified numbers with the same units.'
     )
   })
 
@@ -25,7 +25,7 @@ describe('between', () => {
       // $FlowFixMe
       between('20px', '100px', '4em', '1000px')
     }).toThrow(
-      'minScreen and maxScreen must be provided as stringified numbers with the same units.',
+      'minScreen and maxScreen must be provided as stringified numbers with the same units.'
     )
   })
 
@@ -41,7 +41,7 @@ describe('between', () => {
       // $FlowFixMe
       between('1em', '100em', '400px', '1000px')
     }).toThrow(
-      'fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.',
+      'fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.'
     )
   })
 
@@ -50,7 +50,7 @@ describe('between', () => {
       // $FlowFixMe
       between(20, 100)
     }).toThrow(
-      'fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.',
+      'fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.'
     )
   })
 })

@@ -1,5 +1,5 @@
 // @flow
-import fluidRange from '../fluidRange'
+import fluidRange from '../src'
 
 describe('fluidRange', () => {
   it('should return a valid object when passed a single cssValues object and min/max screen sizes', () => {
@@ -11,8 +11,8 @@ describe('fluidRange', () => {
           toSize: '100px',
         },
         '400px',
-        '1000px',
-      ),
+        '1000px'
+      )
     ).toEqual({
       '@media (min-width: 1000px)': {
         padding: '100px',
@@ -40,8 +40,8 @@ describe('fluidRange', () => {
           },
         ],
         '400px',
-        '1000px',
-      ),
+        '1000px'
+      )
     ).toEqual({
       '@media (min-width: 1000px)': {
         margin: '25px',
@@ -62,7 +62,7 @@ describe('fluidRange', () => {
         prop: 'padding',
         fromSize: '20px',
         toSize: '100px',
-      }),
+      })
     ).toEqual({
       '@media (min-width: 1200px)': {
         padding: '100px',
@@ -80,7 +80,7 @@ describe('fluidRange', () => {
       // $FlowFixMe
       fluidRange('padding', '400px', '1000px')
     }).toThrow(
-      'Expects either an array of objects or a single object with the properties prop, fromSize, and toSize.',
+      'Expects either an array of objects or a single object with the properties prop, fromSize, and toSize.'
     )
   })
 
@@ -89,7 +89,7 @@ describe('fluidRange', () => {
       // $FlowFixMe
       fluidRange(null, '400px', '1000px')
     }).toThrow(
-      'Expects either an array of objects or a single object with the properties prop, fromSize, and toSize.',
+      'Expects either an array of objects or a single object with the properties prop, fromSize, and toSize.'
     )
   })
 
@@ -98,7 +98,7 @@ describe('fluidRange', () => {
       // $FlowFixMe
       fluidRange({}, '400px', '1000px')
     }).toThrow(
-      'Expects the first argument object to have the properties prop, fromSize, and toSize.',
+      'Expects the first argument object to have the properties prop, fromSize, and toSize.'
     )
   })
 
@@ -116,10 +116,10 @@ describe('fluidRange', () => {
           },
         ],
         '400px',
-        '1000px',
+        '1000px'
       )
     }).toThrow(
-      'Expects the objects in the first argument array to have the properties prop, fromSize, and toSize.',
+      'Expects the objects in the first argument array to have the properties prop, fromSize, and toSize.'
     )
   })
 
@@ -135,10 +135,10 @@ describe('fluidRange', () => {
         // $FlowFixMe
         400,
         // $FlowFixMe
-        1000,
+        1000
       )
     }).toThrow(
-      'minScreen and maxScreen must be provided as stringified numbers with the same units.',
+      'minScreen and maxScreen must be provided as stringified numbers with the same units.'
     )
   })
 
@@ -151,10 +151,10 @@ describe('fluidRange', () => {
           toSize: '100px',
         },
         'inherit',
-        'initial',
+        'initial'
       )
     }).toThrow(
-      'minScreen and maxScreen must be provided as stringified numbers with the same units.',
+      'minScreen and maxScreen must be provided as stringified numbers with the same units.'
     )
   })
 
@@ -167,10 +167,10 @@ describe('fluidRange', () => {
           toSize: '100px',
         },
         '100px',
-        '100%',
+        '100%'
       )
     }).toThrow(
-      'minScreen and maxScreen must be provided as stringified numbers with the same units.',
+      'minScreen and maxScreen must be provided as stringified numbers with the same units.'
     )
   })
 
@@ -183,7 +183,7 @@ describe('fluidRange', () => {
           toSize: '100em',
         },
         '100px',
-        '200px',
+        '200px'
       )
     }).toThrow('fromSize and toSize must be provided as stringified numbers with the same units.')
   })

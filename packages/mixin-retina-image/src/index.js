@@ -1,8 +1,8 @@
 // @flow
 import hiDPI from './hiDPI'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 /**
  * A helper to generate a retina background image and non-retina
@@ -37,7 +37,7 @@ export default function retinaImage(
   backgroundSize?: string,
   extension?: string = 'png',
   retinaFilename?: string,
-  retinaSuffix?: string = '_2x',
+  retinaSuffix?: string = '_2x'
 ): Styles {
   if (!filename) {
     throw new PolishedError(58)

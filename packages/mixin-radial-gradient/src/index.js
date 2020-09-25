@@ -1,9 +1,9 @@
 // @flow
-import constructGradientValue from '../internalHelpers/_constructGradientValue'
-import PolishedError from '../internalHelpers/_errors'
+import constructGradientValue from '../../internals/_constructGradientValue'
+import PolishedError from '../../internals/_errors'
 
-import type { RadialGradientConfiguration } from '../types/radialGradientConfiguration'
-import type { Styles } from '../types/style'
+import type { RadialGradientConfiguration } from '../../types/radialGradientConfiguration'
+import type { Styles } from '../../types/style'
 
 /**
  * CSS for declaring a radial gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
@@ -49,7 +49,7 @@ export default function radialGradient({
   return {
     backgroundColor: fallback || colorStops[0].split(' ')[0],
     backgroundImage: constructGradientValue`radial-gradient(${position}${shape}${extent}${colorStops.join(
-      ', ',
+      ', '
     )})`,
   }
 }

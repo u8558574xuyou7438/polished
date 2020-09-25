@@ -1,15 +1,15 @@
 // @flow
 import getValueAndUnit from '../helpers/getValueAndUnit'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-import type { SideKeyword } from '../types/sideKeyword'
-import type { Styles } from '../types/style'
-import type { TriangleConfiguration } from '../types/triangleConfiguration'
+import type { SideKeyword } from '../../types/sideKeyword'
+import type { Styles } from '../../types/style'
+import type { TriangleConfiguration } from '../../types/triangleConfiguration'
 
 const getBorderWidth = (
   pointingDirection: SideKeyword,
   height: [number, string],
-  width: [number, string],
+  width: [number, string]
 ): string => {
   const fullWidth = `${width[0]}${width[1] || ''}`
   const halfWidth = `${width[0] / 2}${width[1] || ''}`

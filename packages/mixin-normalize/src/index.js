@@ -1,5 +1,5 @@
 // @flow
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 /**
  * CSS to normalize abnormalities across browsers (normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css)

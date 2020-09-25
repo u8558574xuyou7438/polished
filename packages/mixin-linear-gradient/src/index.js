@@ -1,9 +1,9 @@
 // @flow
-import constructGradientValue from '../internalHelpers/_constructGradientValue'
-import PolishedError from '../internalHelpers/_errors'
+import constructGradientValue from '../../internals/_constructGradientValue'
+import PolishedError from '../../internals/_errors'
 
-import type { LinearGradientConfiguration } from '../types/linearGradientConfiguration'
-import type { Styles } from '../types/style'
+import type { LinearGradientConfiguration } from '../../types/linearGradientConfiguration'
+import type { Styles } from '../../types/style'
 
 /**
  * CSS for declaring a linear gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
@@ -44,8 +44,8 @@ export default function linearGradient({
   }
   return {
     backgroundColor:
-      fallback
-      || colorStops[0]
+      fallback ||
+      colorStops[0]
         .replace(/,\s+/g, ',')
         .split(' ')[0]
         .replace(/,(?=\S)/g, ', '),

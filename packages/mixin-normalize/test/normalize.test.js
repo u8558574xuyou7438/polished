@@ -1,5 +1,5 @@
 // @flow
-import normalize from '../normalize'
+import normalize from '../src'
 
 describe('normalize', () => {
   it('should return rules', () => {

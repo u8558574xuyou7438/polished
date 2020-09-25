@@ -1,5 +1,5 @@
 // @flow
-import triangle from '../triangle'
+import triangle from '../src'
 
 describe('triangle', () => {
   it('should generate a proper triangle when passed all parameters', () => {
@@ -249,7 +249,7 @@ describe('triangle', () => {
         width: '10px',
       })
     }).toThrow(
-      "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'.",
+      "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'."
     )
   })
 
@@ -263,7 +263,7 @@ describe('triangle', () => {
         pointingDirection: false,
       })
     }).toThrow(
-      "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'.",
+      "Passed invalid argument to triangle, please pass correct pointingDirection e.g. 'right'."
     )
   })
 

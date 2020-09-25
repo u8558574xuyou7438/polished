@@ -1,6 +1,6 @@
 // @flow
 import getValueAndUnit from '../helpers/getValueAndUnit'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
 /**
  * Returns a CSS calc formula for linear interpolation of a property between two values. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px').
@@ -29,7 +29,7 @@ export default function between(
   fromSize: string | number,
   toSize: string | number,
   minScreen?: string = '320px',
-  maxScreen?: string = '1200px',
+  maxScreen?: string = '1200px'
 ): string {
   const [unitlessFromSize, fromSizeUnit] = getValueAndUnit(fromSize)
   const [unitlessToSize, toSizeUnit] = getValueAndUnit(toSize)
@@ -37,19 +37,19 @@ export default function between(
   const [unitlessMaxScreen, maxScreenUnit] = getValueAndUnit(maxScreen)
 
   if (
-    typeof unitlessMinScreen !== 'number'
-    || typeof unitlessMaxScreen !== 'number'
-    || !minScreenUnit
-    || !maxScreenUnit
-    || minScreenUnit !== maxScreenUnit
+    typeof unitlessMinScreen !== 'number' ||
+    typeof unitlessMaxScreen !== 'number' ||
+    !minScreenUnit ||
+    !maxScreenUnit ||
+    minScreenUnit !== maxScreenUnit
   ) {
     throw new PolishedError(47)
   }
 
   if (
-    typeof unitlessFromSize !== 'number'
-    || typeof unitlessToSize !== 'number'
-    || fromSizeUnit !== toSizeUnit
+    typeof unitlessFromSize !== 'number' ||
+    typeof unitlessToSize !== 'number' ||
+    fromSizeUnit !== toSizeUnit
   ) {
     throw new PolishedError(48)
   }

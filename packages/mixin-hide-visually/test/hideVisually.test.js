@@ -1,5 +1,5 @@
 // @flow
-import hideVisually from '../hideVisually'
+import hideVisually from '../src'
 
 describe('hideVisually', () => {
   it('should return the CSS in JS', () => {

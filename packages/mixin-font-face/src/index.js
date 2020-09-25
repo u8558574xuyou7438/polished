@@ -1,8 +1,8 @@
 // @flow
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-import type { FontFaceConfiguration } from '../types/fontFaceConfiguration'
-import type { Styles } from '../types/style'
+import type { FontFaceConfiguration } from '../../types/fontFaceConfiguration'
+import type { Styles } from '../../types/style'
 
 const dataURIRegex = /^\s*data:([a-z]+\/[a-z-]+(;[a-z-]+=[a-z-]+)?)?(;charset=[a-z0-9-]+)?(;base64)?,[a-z0-9!$&',()*+,;=\-._~:@/?%\s]*\s*$/i
 
@@ -28,14 +28,14 @@ function isDataURI(fontFilePath: string): boolean {
 function generateFileReferences(
   fontFilePath: string,
   fileFormats: Array<string>,
-  formatHint: boolean,
+  formatHint: boolean
 ): string {
   if (isDataURI(fontFilePath)) {
     return `url("${fontFilePath}")${generateFormatHint(fileFormats[0], formatHint)}`
   }
 
   const fileFontReferences = fileFormats.map(
-    format => `url("${fontFilePath}.${format}")${generateFormatHint(format, formatHint)}`,
+    format => `url("${fontFilePath}.${format}")${generateFormatHint(format, formatHint)}`
   )
   return fileFontReferences.join(', ')
 }
@@ -49,7 +49,7 @@ function generateSources(
   fontFilePath?: string,
   localFonts: Array<string> | null,
   fileFormats: Array<string>,
-  formatHint: boolean,
+  formatHint: boolean
 ): string {
   const fontReferences = []
   if (localFonts) fontReferences.push(generateLocalReferences(localFonts))
