@@ -1,4 +1,4 @@
-import backgroundImages from '../backgroundImages'
+import backgroundImages from '../src'
 
 describe('backgroundImages', () => {
   it('should generate a single background from a parameter', () => {

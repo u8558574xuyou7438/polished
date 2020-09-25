@@ -1,5 +1,5 @@
 // @flow
-import border from '../border'
+import border from '../src'
 
 describe('border', () => {
   it('properly returns separated border styles', () => {

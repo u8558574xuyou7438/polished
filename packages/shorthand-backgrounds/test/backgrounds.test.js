@@ -1,4 +1,4 @@
-import backgrounds from '../backgrounds'
+import backgrounds from '../src'
 
 describe('backgrounds', () => {
   it('should generate a single background from a parameter', () => {
@@ -14,7 +14,7 @@ describe('backgrounds', () => {
       ...backgrounds(
         'url("/image/background.jpg")',
         'linear-gradient(red, green)',
-        'center no-repeat',
+        'center no-repeat'
       ),
     }).toEqual({
       background: 'url("/image/background.jpg"), linear-gradient(red, green), center no-repeat',

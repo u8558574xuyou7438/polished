@@ -1,7 +1,7 @@
 // @flow
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 /**
  * Shorthand for easily setting the animation property. Allows either multiple arrays with animations
@@ -47,20 +47,18 @@ export default function animation(
   if (!multiMode && args.length > 8) {
     throw new PolishedError(64)
   }
-  const code = args
-    .map(arg => {
-      if ((multiMode && !Array.isArray(arg)) || (!multiMode && Array.isArray(arg))) {
-        throw new PolishedError(65)
-      }
-      if (Array.isArray(arg) && arg.length > 8) {
-        throw new PolishedError(66)
-      }
-
-      return Array.isArray(arg) ? arg.join(' ') : arg
-    })
-    .join(', ')
-
   return {
-    animation: code,
+    animation: args
+      .map(arg => {
+        if ((multiMode && !Array.isArray(arg)) || (!multiMode && Array.isArray(arg))) {
+          throw new PolishedError(65)
+        }
+        if (Array.isArray(arg) && arg.length > 8) {
+          throw new PolishedError(66)
+        }
+
+        return Array.isArray(arg) ? arg.join(' ') : arg
+      })
+      .join(', '),
   }
 }

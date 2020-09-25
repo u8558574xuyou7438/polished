@@ -1,8 +1,8 @@
 // @flow
-import capitalizeString from '../internalHelpers/_capitalizeString'
-import PolishedError from '../internalHelpers/_errors'
+import capitalizeString from '../../internals/_capitalizeString'
+import PolishedError from '../../internals/_errors'
 
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 /**
  * Shorthand that accepts a value for side and a value for radius and applies the radius value to both corners of the side.

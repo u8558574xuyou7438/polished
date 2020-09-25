@@ -1,5 +1,5 @@
 // @flow
-import borderRadius from '../borderRadius'
+import borderRadius from '../src'
 
 describe('borderRadius', () => {
   it('returns the proper values for the top side', () => {
@@ -48,7 +48,7 @@ describe('borderRadius', () => {
     expect(() => {
       borderRadius('all', '100%')
     }).toThrow(
-      'borderRadius expects one of "top", "bottom", "left" or "right" as the first argument.',
+      'borderRadius expects one of "top", "bottom", "left" or "right" as the first argument.'
     )
   })
 })

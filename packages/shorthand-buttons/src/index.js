@@ -1,7 +1,7 @@
 // @flow
-import statefulSelectors from '../internalHelpers/_statefulSelectors'
+import statefulSelectors from '../../internals/_statefulSelectors'
 
-import type { InteractionState } from '../types/interactionState'
+import type { InteractionState } from '../../types/interactionState'
 
 const stateMap = [undefined, null, 'active', 'focus', 'hover']
 

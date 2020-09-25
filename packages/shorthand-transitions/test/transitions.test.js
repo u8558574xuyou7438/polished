@@ -1,4 +1,4 @@
-import transitions from '../transitions'
+import transitions from '../src'
 
 describe('transitions', () => {
   it('should generate a single transition from a parameter', () => {

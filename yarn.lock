@@ -2811,6 +2811,116 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polished/helper-directional-property@workspace:*, @polished/helper-directional-property@workspace:packages/helper-directional-property":
+  version: 0.0.0-use.local
+  resolution: "@polished/helper-directional-property@workspace:packages/helper-directional-property"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-animation@workspace:packages/shorthand-animation":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-animation@workspace:packages/shorthand-animation"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-background-images@workspace:packages/shorthand-background-images":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-background-images@workspace:packages/shorthand-background-images"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-backgrounds@workspace:packages/shorthand-backgrounds":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-backgrounds@workspace:packages/shorthand-backgrounds"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-border-color@workspace:packages/shorthand-border-color":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-border-color@workspace:packages/shorthand-border-color"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-border-radius@workspace:packages/shorthand-border-radius":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-border-radius@workspace:packages/shorthand-border-radius"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-border-style@workspace:packages/shorthand-border-style":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-border-style@workspace:packages/shorthand-border-style"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-border-width@workspace:packages/shorthand-border-width":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-border-width@workspace:packages/shorthand-border-width"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-border@workspace:packages/shorthand-border":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-border@workspace:packages/shorthand-border"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-buttons@workspace:packages/shorthand-buttons":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-buttons@workspace:packages/shorthand-buttons"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-margin@workspace:packages/shorthand-margin":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-margin@workspace:packages/shorthand-margin"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-padding@workspace:packages/shorthand-padding":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-padding@workspace:packages/shorthand-padding"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-position@workspace:packages/shorthand-position":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-position@workspace:packages/shorthand-position"
+  dependencies:
+    "@polished/helper-directional-property": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-size@workspace:packages/shorthand-size":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-size@workspace:packages/shorthand-size"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-text-inputs@workspace:packages/shorthand-text-inputs":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-text-inputs@workspace:packages/shorthand-text-inputs"
+  languageName: unknown
+  linkType: soft
+
+"@polished/shorthand-transitions@workspace:packages/shorthand-transitions":
+  version: 0.0.0-use.local
+  resolution: "@polished/shorthand-transitions@workspace:packages/shorthand-transitions"
+  languageName: unknown
+  linkType: soft
+
 "@rollup/plugin-babel@npm:^5.2.1":
   version: 5.2.1
   resolution: "@rollup/plugin-babel@npm:5.2.1"
@@ -7403,12 +7513,6 @@ fsevents@^1.2.7:
 "helper-cssvar-63d037@workspace:packages/helper-cssvar":
   version: 0.0.0-use.local
   resolution: "helper-cssvar-63d037@workspace:packages/helper-cssvar"
-  languageName: unknown
-  linkType: soft
-
-"helper-direcitonal-property-0088b1@workspace:packages/helper-direcitonal-property":
-  version: 0.0.0-use.local
-  resolution: "helper-direcitonal-property-0088b1@workspace:packages/helper-direcitonal-property"
   languageName: unknown
   linkType: soft
 
@@ -13182,96 +13286,6 @@ fsevents@^1.2.7:
   checksum: 3559ff550917ece921d252edf42eb54827540e9676e537137ace236df8f9b78e48c542ae0b3f8876fea0faf5826c97629d5b8cb9ac7dee287260e9804fb8132c
   languageName: node
   linkType: hard
-
-"shorthand-animation-a4d784@workspace:packages/shorthand-animation":
-  version: 0.0.0-use.local
-  resolution: "shorthand-animation-a4d784@workspace:packages/shorthand-animation"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-background-images-2e90f8@workspace:packages/shorthand-background-images":
-  version: 0.0.0-use.local
-  resolution: "shorthand-background-images-2e90f8@workspace:packages/shorthand-background-images"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-backgrounds-c39337@workspace:packages/shorthand-backgrounds":
-  version: 0.0.0-use.local
-  resolution: "shorthand-backgrounds-c39337@workspace:packages/shorthand-backgrounds"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-border-500944@workspace:packages/shorthand-border":
-  version: 0.0.0-use.local
-  resolution: "shorthand-border-500944@workspace:packages/shorthand-border"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-border-color-f57d89@workspace:packages/shorthand-border-color":
-  version: 0.0.0-use.local
-  resolution: "shorthand-border-color-f57d89@workspace:packages/shorthand-border-color"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-border-radius-9d536d@workspace:packages/shorthand-border-radius":
-  version: 0.0.0-use.local
-  resolution: "shorthand-border-radius-9d536d@workspace:packages/shorthand-border-radius"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-border-style-84e654@workspace:packages/shorthand-border-style":
-  version: 0.0.0-use.local
-  resolution: "shorthand-border-style-84e654@workspace:packages/shorthand-border-style"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-border-width-e95cb1@workspace:packages/shorthand-border-width":
-  version: 0.0.0-use.local
-  resolution: "shorthand-border-width-e95cb1@workspace:packages/shorthand-border-width"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-buttons-1d4313@workspace:packages/shorthand-buttons":
-  version: 0.0.0-use.local
-  resolution: "shorthand-buttons-1d4313@workspace:packages/shorthand-buttons"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-margin-6be64e@workspace:packages/shorthand-margin":
-  version: 0.0.0-use.local
-  resolution: "shorthand-margin-6be64e@workspace:packages/shorthand-margin"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-padding-00f416@workspace:packages/shorthand-padding":
-  version: 0.0.0-use.local
-  resolution: "shorthand-padding-00f416@workspace:packages/shorthand-padding"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-position-f3f741@workspace:packages/shorthand-position":
-  version: 0.0.0-use.local
-  resolution: "shorthand-position-f3f741@workspace:packages/shorthand-position"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-size-f41060@workspace:packages/shorthand-size":
-  version: 0.0.0-use.local
-  resolution: "shorthand-size-f41060@workspace:packages/shorthand-size"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-text-inputs-abab2a@workspace:packages/shorthand-text-inputs":
-  version: 0.0.0-use.local
-  resolution: "shorthand-text-inputs-abab2a@workspace:packages/shorthand-text-inputs"
-  languageName: unknown
-  linkType: soft
-
-"shorthand-transitions-bbeec4@workspace:packages/shorthand-transitions":
-  version: 0.0.0-use.local
-  resolution: "shorthand-transitions-bbeec4@workspace:packages/shorthand-transitions"
-  languageName: unknown
-  linkType: soft
 
 "shx@npm:^0.3.2":
   version: 0.3.2

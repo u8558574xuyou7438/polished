@@ -1,5 +1,5 @@
 // @flow
-import animation from '../animation'
+import animation from '../src'
 
 describe('animation', () => {
   describe('single mode', () => {
@@ -59,7 +59,7 @@ describe('animation', () => {
       expect(() => {
         animation(
           ['rotate'],
-          ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'oops'],
+          ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'oops']
         )
       }).toThrow()
     })

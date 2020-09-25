@@ -1,7 +1,7 @@
 // @flow
-import directionalProperty from '../helpers/directionalProperty'
+import directionalProperty from '@polished/helper-directional-property'
 
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 const positionMap = ['absolute', 'fixed', 'relative', 'static', 'sticky']
 

@@ -143,8 +143,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/helper-cssvar"
       },
       {
-        "name": "helper-direcitonal-property-0088b1",
-        "reference": "workspace:packages/helper-direcitonal-property"
+        "name": "@polished/helper-directional-property",
+        "reference": "workspace:packages/helper-directional-property"
       },
       {
         "name": "helper-ease-in-dfbf99",
@@ -247,69 +247,85 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/mixin-word-wrap"
       },
       {
-        "name": "shorthand-animation-a4d784",
+        "name": "@polished/shorthand-animation",
         "reference": "workspace:packages/shorthand-animation"
       },
       {
-        "name": "shorthand-background-images-2e90f8",
+        "name": "@polished/shorthand-background-images",
         "reference": "workspace:packages/shorthand-background-images"
       },
       {
-        "name": "shorthand-backgrounds-c39337",
+        "name": "@polished/shorthand-backgrounds",
         "reference": "workspace:packages/shorthand-backgrounds"
       },
       {
-        "name": "shorthand-border-500944",
+        "name": "@polished/shorthand-border",
         "reference": "workspace:packages/shorthand-border"
       },
       {
-        "name": "shorthand-border-color-f57d89",
+        "name": "@polished/shorthand-border-color",
         "reference": "workspace:packages/shorthand-border-color"
       },
       {
-        "name": "shorthand-border-radius-9d536d",
+        "name": "@polished/shorthand-border-radius",
         "reference": "workspace:packages/shorthand-border-radius"
       },
       {
-        "name": "shorthand-border-style-84e654",
+        "name": "@polished/shorthand-border-style",
         "reference": "workspace:packages/shorthand-border-style"
       },
       {
-        "name": "shorthand-border-width-e95cb1",
+        "name": "@polished/shorthand-border-width",
         "reference": "workspace:packages/shorthand-border-width"
       },
       {
-        "name": "shorthand-buttons-1d4313",
+        "name": "@polished/shorthand-buttons",
         "reference": "workspace:packages/shorthand-buttons"
       },
       {
-        "name": "shorthand-margin-6be64e",
+        "name": "@polished/shorthand-margin",
         "reference": "workspace:packages/shorthand-margin"
       },
       {
-        "name": "shorthand-padding-00f416",
+        "name": "@polished/shorthand-padding",
         "reference": "workspace:packages/shorthand-padding"
       },
       {
-        "name": "shorthand-position-f3f741",
+        "name": "@polished/shorthand-position",
         "reference": "workspace:packages/shorthand-position"
       },
       {
-        "name": "shorthand-size-f41060",
+        "name": "@polished/shorthand-size",
         "reference": "workspace:packages/shorthand-size"
       },
       {
-        "name": "shorthand-text-inputs-abab2a",
+        "name": "@polished/shorthand-text-inputs",
         "reference": "workspace:packages/shorthand-text-inputs"
       },
       {
-        "name": "shorthand-transitions-bbeec4",
+        "name": "@polished/shorthand-transitions",
         "reference": "workspace:packages/shorthand-transitions"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@polished/helper-directional-property", ["workspace:packages/helper-directional-property"]],
+      ["@polished/shorthand-animation", ["workspace:packages/shorthand-animation"]],
+      ["@polished/shorthand-background-images", ["workspace:packages/shorthand-background-images"]],
+      ["@polished/shorthand-backgrounds", ["workspace:packages/shorthand-backgrounds"]],
+      ["@polished/shorthand-border", ["workspace:packages/shorthand-border"]],
+      ["@polished/shorthand-border-color", ["workspace:packages/shorthand-border-color"]],
+      ["@polished/shorthand-border-radius", ["workspace:packages/shorthand-border-radius"]],
+      ["@polished/shorthand-border-style", ["workspace:packages/shorthand-border-style"]],
+      ["@polished/shorthand-border-width", ["workspace:packages/shorthand-border-width"]],
+      ["@polished/shorthand-buttons", ["workspace:packages/shorthand-buttons"]],
+      ["@polished/shorthand-margin", ["workspace:packages/shorthand-margin"]],
+      ["@polished/shorthand-padding", ["workspace:packages/shorthand-padding"]],
+      ["@polished/shorthand-position", ["workspace:packages/shorthand-position"]],
+      ["@polished/shorthand-size", ["workspace:packages/shorthand-size"]],
+      ["@polished/shorthand-text-inputs", ["workspace:packages/shorthand-text-inputs"]],
+      ["@polished/shorthand-transitions", ["workspace:packages/shorthand-transitions"]],
       ["color-adjust-hue-4deb71", ["workspace:packages/color-adjust-hue"]],
       ["color-compliment-923f7e", ["workspace:packages/color-compliment"]],
       ["color-darken-73ef51", ["workspace:packages/color-darken"]],
@@ -340,7 +356,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["color-to-color-string-1cc24b", ["workspace:packages/color-to-color-string"]],
       ["color-transparentize-37e88e", ["workspace:packages/color-transparentize"]],
       ["helper-cssvar-63d037", ["workspace:packages/helper-cssvar"]],
-      ["helper-direcitonal-property-0088b1", ["workspace:packages/helper-direcitonal-property"]],
       ["helper-ease-in-dfbf99", ["workspace:packages/helper-ease-in"]],
       ["helper-ease-in-out-345d71", ["workspace:packages/helper-ease-in-out"]],
       ["helper-ease-out-41a978", ["workspace:packages/helper-ease-out"]],
@@ -366,22 +381,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["mixin-retina-image-286b94", ["workspace:packages/mixin-retina-image"]],
       ["mixin-triangle-3ed0e1", ["workspace:packages/mixin-triangle"]],
       ["mixin-word-wrap-c3ef68", ["workspace:packages/mixin-word-wrap"]],
-      ["polished", ["workspace:."]],
-      ["shorthand-animation-a4d784", ["workspace:packages/shorthand-animation"]],
-      ["shorthand-background-images-2e90f8", ["workspace:packages/shorthand-background-images"]],
-      ["shorthand-backgrounds-c39337", ["workspace:packages/shorthand-backgrounds"]],
-      ["shorthand-border-500944", ["workspace:packages/shorthand-border"]],
-      ["shorthand-border-color-f57d89", ["workspace:packages/shorthand-border-color"]],
-      ["shorthand-border-radius-9d536d", ["workspace:packages/shorthand-border-radius"]],
-      ["shorthand-border-style-84e654", ["workspace:packages/shorthand-border-style"]],
-      ["shorthand-border-width-e95cb1", ["workspace:packages/shorthand-border-width"]],
-      ["shorthand-buttons-1d4313", ["workspace:packages/shorthand-buttons"]],
-      ["shorthand-margin-6be64e", ["workspace:packages/shorthand-margin"]],
-      ["shorthand-padding-00f416", ["workspace:packages/shorthand-padding"]],
-      ["shorthand-position-f3f741", ["workspace:packages/shorthand-position"]],
-      ["shorthand-size-f41060", ["workspace:packages/shorthand-size"]],
-      ["shorthand-text-inputs-abab2a", ["workspace:packages/shorthand-text-inputs"]],
-      ["shorthand-transitions-bbeec4", ["workspace:packages/shorthand-transitions"]]
+      ["polished", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -3851,6 +3851,157 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.11.1"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["@polished/helper-directional-property", [
+        ["workspace:packages/helper-directional-property", {
+          "packageLocation": "./packages/helper-directional-property/",
+          "packageDependencies": [
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-animation", [
+        ["workspace:packages/shorthand-animation", {
+          "packageLocation": "./packages/shorthand-animation/",
+          "packageDependencies": [
+            ["@polished/shorthand-animation", "workspace:packages/shorthand-animation"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-background-images", [
+        ["workspace:packages/shorthand-background-images", {
+          "packageLocation": "./packages/shorthand-background-images/",
+          "packageDependencies": [
+            ["@polished/shorthand-background-images", "workspace:packages/shorthand-background-images"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-backgrounds", [
+        ["workspace:packages/shorthand-backgrounds", {
+          "packageLocation": "./packages/shorthand-backgrounds/",
+          "packageDependencies": [
+            ["@polished/shorthand-backgrounds", "workspace:packages/shorthand-backgrounds"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-border", [
+        ["workspace:packages/shorthand-border", {
+          "packageLocation": "./packages/shorthand-border/",
+          "packageDependencies": [
+            ["@polished/shorthand-border", "workspace:packages/shorthand-border"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-border-color", [
+        ["workspace:packages/shorthand-border-color", {
+          "packageLocation": "./packages/shorthand-border-color/",
+          "packageDependencies": [
+            ["@polished/shorthand-border-color", "workspace:packages/shorthand-border-color"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-border-radius", [
+        ["workspace:packages/shorthand-border-radius", {
+          "packageLocation": "./packages/shorthand-border-radius/",
+          "packageDependencies": [
+            ["@polished/shorthand-border-radius", "workspace:packages/shorthand-border-radius"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-border-style", [
+        ["workspace:packages/shorthand-border-style", {
+          "packageLocation": "./packages/shorthand-border-style/",
+          "packageDependencies": [
+            ["@polished/shorthand-border-style", "workspace:packages/shorthand-border-style"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-border-width", [
+        ["workspace:packages/shorthand-border-width", {
+          "packageLocation": "./packages/shorthand-border-width/",
+          "packageDependencies": [
+            ["@polished/shorthand-border-width", "workspace:packages/shorthand-border-width"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-buttons", [
+        ["workspace:packages/shorthand-buttons", {
+          "packageLocation": "./packages/shorthand-buttons/",
+          "packageDependencies": [
+            ["@polished/shorthand-buttons", "workspace:packages/shorthand-buttons"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-margin", [
+        ["workspace:packages/shorthand-margin", {
+          "packageLocation": "./packages/shorthand-margin/",
+          "packageDependencies": [
+            ["@polished/shorthand-margin", "workspace:packages/shorthand-margin"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-padding", [
+        ["workspace:packages/shorthand-padding", {
+          "packageLocation": "./packages/shorthand-padding/",
+          "packageDependencies": [
+            ["@polished/shorthand-padding", "workspace:packages/shorthand-padding"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-position", [
+        ["workspace:packages/shorthand-position", {
+          "packageLocation": "./packages/shorthand-position/",
+          "packageDependencies": [
+            ["@polished/shorthand-position", "workspace:packages/shorthand-position"],
+            ["@polished/helper-directional-property", "workspace:packages/helper-directional-property"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-size", [
+        ["workspace:packages/shorthand-size", {
+          "packageLocation": "./packages/shorthand-size/",
+          "packageDependencies": [
+            ["@polished/shorthand-size", "workspace:packages/shorthand-size"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-text-inputs", [
+        ["workspace:packages/shorthand-text-inputs", {
+          "packageLocation": "./packages/shorthand-text-inputs/",
+          "packageDependencies": [
+            ["@polished/shorthand-text-inputs", "workspace:packages/shorthand-text-inputs"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/shorthand-transitions", [
+        ["workspace:packages/shorthand-transitions", {
+          "packageLocation": "./packages/shorthand-transitions/",
+          "packageDependencies": [
+            ["@polished/shorthand-transitions", "workspace:packages/shorthand-transitions"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["@rollup/plugin-babel", [
@@ -9028,15 +9179,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/helper-cssvar/",
           "packageDependencies": [
             ["helper-cssvar-63d037", "workspace:packages/helper-cssvar"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["helper-direcitonal-property-0088b1", [
-        ["workspace:packages/helper-direcitonal-property", {
-          "packageLocation": "./packages/helper-direcitonal-property/",
-          "packageDependencies": [
-            ["helper-direcitonal-property-0088b1", "workspace:packages/helper-direcitonal-property"]
           ],
           "linkType": "SOFT",
         }]
@@ -15370,141 +15512,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["shellwords", "npm:0.1.1"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["shorthand-animation-a4d784", [
-        ["workspace:packages/shorthand-animation", {
-          "packageLocation": "./packages/shorthand-animation/",
-          "packageDependencies": [
-            ["shorthand-animation-a4d784", "workspace:packages/shorthand-animation"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-background-images-2e90f8", [
-        ["workspace:packages/shorthand-background-images", {
-          "packageLocation": "./packages/shorthand-background-images/",
-          "packageDependencies": [
-            ["shorthand-background-images-2e90f8", "workspace:packages/shorthand-background-images"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-backgrounds-c39337", [
-        ["workspace:packages/shorthand-backgrounds", {
-          "packageLocation": "./packages/shorthand-backgrounds/",
-          "packageDependencies": [
-            ["shorthand-backgrounds-c39337", "workspace:packages/shorthand-backgrounds"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-border-500944", [
-        ["workspace:packages/shorthand-border", {
-          "packageLocation": "./packages/shorthand-border/",
-          "packageDependencies": [
-            ["shorthand-border-500944", "workspace:packages/shorthand-border"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-border-color-f57d89", [
-        ["workspace:packages/shorthand-border-color", {
-          "packageLocation": "./packages/shorthand-border-color/",
-          "packageDependencies": [
-            ["shorthand-border-color-f57d89", "workspace:packages/shorthand-border-color"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-border-radius-9d536d", [
-        ["workspace:packages/shorthand-border-radius", {
-          "packageLocation": "./packages/shorthand-border-radius/",
-          "packageDependencies": [
-            ["shorthand-border-radius-9d536d", "workspace:packages/shorthand-border-radius"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-border-style-84e654", [
-        ["workspace:packages/shorthand-border-style", {
-          "packageLocation": "./packages/shorthand-border-style/",
-          "packageDependencies": [
-            ["shorthand-border-style-84e654", "workspace:packages/shorthand-border-style"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-border-width-e95cb1", [
-        ["workspace:packages/shorthand-border-width", {
-          "packageLocation": "./packages/shorthand-border-width/",
-          "packageDependencies": [
-            ["shorthand-border-width-e95cb1", "workspace:packages/shorthand-border-width"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-buttons-1d4313", [
-        ["workspace:packages/shorthand-buttons", {
-          "packageLocation": "./packages/shorthand-buttons/",
-          "packageDependencies": [
-            ["shorthand-buttons-1d4313", "workspace:packages/shorthand-buttons"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-margin-6be64e", [
-        ["workspace:packages/shorthand-margin", {
-          "packageLocation": "./packages/shorthand-margin/",
-          "packageDependencies": [
-            ["shorthand-margin-6be64e", "workspace:packages/shorthand-margin"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-padding-00f416", [
-        ["workspace:packages/shorthand-padding", {
-          "packageLocation": "./packages/shorthand-padding/",
-          "packageDependencies": [
-            ["shorthand-padding-00f416", "workspace:packages/shorthand-padding"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-position-f3f741", [
-        ["workspace:packages/shorthand-position", {
-          "packageLocation": "./packages/shorthand-position/",
-          "packageDependencies": [
-            ["shorthand-position-f3f741", "workspace:packages/shorthand-position"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-size-f41060", [
-        ["workspace:packages/shorthand-size", {
-          "packageLocation": "./packages/shorthand-size/",
-          "packageDependencies": [
-            ["shorthand-size-f41060", "workspace:packages/shorthand-size"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-text-inputs-abab2a", [
-        ["workspace:packages/shorthand-text-inputs", {
-          "packageLocation": "./packages/shorthand-text-inputs/",
-          "packageDependencies": [
-            ["shorthand-text-inputs-abab2a", "workspace:packages/shorthand-text-inputs"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["shorthand-transitions-bbeec4", [
-        ["workspace:packages/shorthand-transitions", {
-          "packageLocation": "./packages/shorthand-transitions/",
-          "packageDependencies": [
-            ["shorthand-transitions-bbeec4", "workspace:packages/shorthand-transitions"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["shx", [

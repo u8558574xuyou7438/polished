@@ -1,7 +1,7 @@
 // @flow
-import directionalProperty from '../helpers/directionalProperty'
+import directionalProperty from '@polished/helper-directional-property'
 
-import type { Styles } from '../types/style'
+import type { Styles } from '../../types/style'
 
 /**
  * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.

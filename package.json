@@ -40,10 +40,10 @@
     "build:watch": "npm-watch",
     "build:flow": "flow-copy-source -v -i '{**/test/*.js,**/*.test.js}' src lib",
     "build:typescript": "tsgen \"lib/**/*.js.flow\" --ignore \"lib/**/_*.js.flow\"",
-    "test": "jest src",
+    "test": "jest packages",
     "typescript": "tsc ./typescript-test.ts --noEmit --target es6 --module es2015 --moduleResolution node --allowJs",
-    "lint": "eslint src",
-    "flow": "flow check && flow batch-coverage src/ --show-all --strip-root",
+    "lint": "eslint packages",
+    "flow": "flow check && flow batch-coverage packages/ --show-all --strip-root",
     "prepare": "yarn build && yarn typescript",
     "semantic-release": "semantic-release"
   },
