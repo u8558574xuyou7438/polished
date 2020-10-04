@@ -1,7 +1,7 @@
 {
   "name": "@polished/helper-get-value-and-unit",
   "version": "5.0.0",
-  "description": "",
+  "description": "Helper to parse a CSS into its value and unit as elements of an array.",
   "main": "src/index.js",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",

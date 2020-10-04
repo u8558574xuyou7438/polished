@@ -1,5 +1,5 @@
 // @flow
-import getValueAndUnit from '../helpers/getValueAndUnit'
+import getValueAndUnit from '@polished/helper-get-value-and-unit'
 import PolishedError from '../../internals/_errors'
 
 /**
