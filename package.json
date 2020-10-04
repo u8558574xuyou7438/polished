@@ -30,16 +30,14 @@
   "types": "lib/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn build:lib && yarn build:dist && yarn build:flow && yarn build:typescript",
+    "build": "yarn build:lib && yarn build:dist && yarn build:typescript",
     "prebuild:lib": "shx rm -rf lib/*",
-    "build:lib": "cross-env BABEL_ENV=cjs babel --out-dir lib src --ignore test.js",
+    "build:lib": "cross-env BABEL_ENV=cjs babel --out-dir lib src --ignore test.ts",
     "commit": "cz",
     "prebuild:umd": "shx rm -rf dist/*",
     "prebuild:dist": "shx rm -rf dist/*",
     "build:dist": "rollup -c",
     "build:watch": "npm-watch",
-    "build:flow": "flow-copy-source -v -i '{**/test/*.js,**/*.test.js}' src lib",
-    "build:typescript": "tsgen \"lib/**/*.js.flow\" --ignore \"lib/**/_*.js.flow\"",
     "test": "jest packages",
     "typescript": "tsc ./typescript-test.ts --noEmit --target es6 --module es2015 --moduleResolution node --allowJs",
     "lint": "eslint packages",
@@ -51,13 +49,13 @@
     "packages/*"
   ],
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.ts": [
       "prettier --write",
       "eslint --fix"
     ]
   },
   "watch": {
-    "build:lib": "src/**/*.js"
+    "build:lib": "src/**/*.ts"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2"
@@ -69,6 +67,7 @@
     "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-flow": "^7.9.0",
+    "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-babel": "^5.2.1",
@@ -87,8 +86,6 @@
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
-    "flow-bin": "^0.133.0",
-    "flow-copy-source": "^2.0.8",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lerna": "^3.22.1",

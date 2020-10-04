@@ -15,7 +15,7 @@ const globals = {
   '@babel/runtime/helpers/esm/taggedTemplateLiteralLoose': 'taggedTemplateLiteralLoose',
 }
 
-const input = 'src/index.js'
+const input = 'src/index.ts'
 const name = 'polished'
 
 const getBabelOptions = ({ useESModules }, targets) => ({

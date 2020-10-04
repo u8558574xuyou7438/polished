@@ -1,5 +1,5 @@
 // @flow
-import darken from '../darken'
+import darken from '../src'
 
 describe('darken', () => {
   it('should darken a color by 20%', () => {

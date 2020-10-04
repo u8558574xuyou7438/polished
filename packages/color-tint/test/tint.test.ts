@@ -1,5 +1,5 @@
 // @flow
-import tint from '../tint'
+import tint from '../src'
 
 describe('test', () => {
   it('should tint the provided color with white by the given percentage', () => {

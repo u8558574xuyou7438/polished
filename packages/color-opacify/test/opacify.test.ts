@@ -1,5 +1,5 @@
 // @flow
-import opacify from '../opacify'
+import opacify from '../src'
 
 describe('opacify', () => {
   it('should increase the opacity of hex #fff by 0.1 and still be 1', () => {
@@ -50,7 +50,7 @@ describe('opacify', () => {
     expect(() => {
       opacify(0.5, 'not a color')
     }).toThrow(
-      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.",
+      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation."
     )
   })
 })

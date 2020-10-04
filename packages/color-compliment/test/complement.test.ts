@@ -1,5 +1,5 @@
 // @flow
-import complement from '../complement'
+import complement from '../src'
 
 describe('complement', () => {
   it('should return the complement of a reduced hex color', () => {

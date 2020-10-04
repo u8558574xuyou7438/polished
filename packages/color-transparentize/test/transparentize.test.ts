@@ -1,5 +1,5 @@
 // @flow
-import transparentize from '../transparentize'
+import transparentize from '../src'
 
 describe('transparentize', () => {
   it('should reduce the opacity of hex #fff by 0.1', () => {
@@ -66,7 +66,7 @@ describe('transparentize', () => {
     expect(() => {
       transparentize(0.5, 'not a color')
     }).toThrow(
-      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.",
+      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation."
     )
   })
 })

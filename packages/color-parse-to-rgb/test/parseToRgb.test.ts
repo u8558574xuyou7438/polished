@@ -1,4 +1,4 @@
-import parseToRgb from '../parseToRgb'
+import parseToRgb from '../src'
 
 describe('parseToRgb', () => {
   it('should parse a hex color representation', () => {
@@ -123,7 +123,7 @@ describe('parseToRgb', () => {
     expect(() => {
       parseToRgb('(174,67,255)')
     }).toThrow(
-      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.",
+      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation."
     )
   })
 
@@ -131,7 +131,7 @@ describe('parseToRgb', () => {
     expect(() => {
       parseToRgb(12345)
     }).toThrow(
-      'Passed an incorrect argument to a color function, please pass a string representation of a color.',
+      'Passed an incorrect argument to a color function, please pass a string representation of a color.'
     )
   })
 
@@ -139,7 +139,7 @@ describe('parseToRgb', () => {
     expect(() => {
       parseToRgb('hsl(210,120%,4%)')
     }).toThrow(
-      `Couldn't generate valid rgb string from ${'hsl(210,120%,4%)'}, it returned ${'rgb(-2,10,22)'}.`,
+      `Couldn't generate valid rgb string from ${'hsl(210,120%,4%)'}, it returned ${'rgb(-2,10,22)'}.`
     )
   })
 
@@ -147,7 +147,7 @@ describe('parseToRgb', () => {
     expect(() => {
       parseToRgb('hsla(210,120%,4%,0.7)')
     }).toThrow(
-      `Couldn't generate valid rgb string from ${'hsla(210,120%,4%,0.7)'}, it returned ${'rgb(-2,10,22)'}.`,
+      `Couldn't generate valid rgb string from ${'hsla(210,120%,4%,0.7)'}, it returned ${'rgb(-2,10,22)'}.`
     )
   })
 })

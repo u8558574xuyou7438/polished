@@ -1,5 +1,5 @@
 // @flow
-import hsl from '../hsl'
+import hsl from '../src'
 
 describe('hsl', () => {
   it('should convert numbers to a hex color', () => {
@@ -26,7 +26,7 @@ describe('hsl', () => {
     expect(() => ({
       background: hsl({ hue: 360, saturation: 0.75, lightness: 0.4 }, 250, 100),
     })).toThrow(
-      'Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).',
+      'Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).'
     )
   })
 })

@@ -1,5 +1,5 @@
 // @flow
-import rgbToColorString from '../rgbToColorString'
+import rgbToColorString from '../src'
 
 describe('rgbToColorString', () => {
   it('should convert a RgbColor to a reduced hex string', () => {
@@ -47,7 +47,7 @@ describe('rgbToColorString', () => {
   it('should throw an error if anything else than a RgbColor or RgbaColor is provided', () => {
     // $FlowFixMe
     expect(() => rgbToColorString({ red: 255, green: 1, hue: 240 })).toThrow(
-      'Passed invalid argument to rgbToColorString, please pass a RgbColor or RgbaColor object.',
+      'Passed invalid argument to rgbToColorString, please pass a RgbColor or RgbaColor object.'
     )
   })
 })

@@ -1,6 +1,6 @@
 // @flow
 import endsWith from './_endsWith'
-import stripUnit from '../helpers/stripUnit'
+import stripUnit from '@polished/helper-strip-unit'
 import PolishedError from './_errors'
 
 /**
@@ -9,7 +9,7 @@ import PolishedError from './_errors'
  */
 const pxtoFactory = (to: string) => (
   pxval: string | number,
-  base?: string | number = '16px',
+  base?: string | number = '16px'
 ): string => {
   let newPxval = pxval
   let newBase = base

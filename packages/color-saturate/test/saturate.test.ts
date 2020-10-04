@@ -1,5 +1,5 @@
 // @flow
-import saturate from '../saturate'
+import saturate from '../src'
 
 describe('saturate', () => {
   it('should saturate a color by 10%', () => {

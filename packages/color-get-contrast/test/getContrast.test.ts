@@ -1,5 +1,5 @@
 // @flow
-import getContrast from '../getContrast'
+import getContrast from '../src'
 
 describe('getContrast', () => {
   it('should return the color contrast of two hex colors', () => {

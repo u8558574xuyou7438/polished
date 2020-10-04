@@ -1,5 +1,5 @@
 // @flow
-import hslToColorString from '../hslToColorString'
+import hslToColorString from '../src'
 
 describe('hslToColorString', () => {
   it('should convert a HslColor to a reduced hex string', () => {
@@ -38,7 +38,7 @@ describe('hslToColorString', () => {
   it('should throw an error if anything else than a HslColor or HslaColor is provided', () => {
     // $FlowFixMe
     expect(() => hslToColorString({ red: 255, green: 1, hue: 240 })).toThrow(
-      'Passed invalid argument to hslToColorString, please pass a HslColor or HslaColor object.',
+      'Passed invalid argument to hslToColorString, please pass a HslColor or HslaColor object.'
     )
   })
 })

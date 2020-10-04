@@ -1,4 +1,4 @@
-import parseToHsl from '../parseToHsl'
+import parseToHsl from '../src'
 
 describe('parseToHsl', () => {
   it('should parse a hex color representation', () => {
@@ -90,7 +90,7 @@ describe('parseToHsl', () => {
     expect(() => {
       parseToHsl('(174,67,255)')
     }).toThrow(
-      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation.",
+      "Couldn't parse the color string. Please provide the color as a string in hex, rgb, rgba, hsl or hsla notation."
     )
   })
 })

@@ -2,7 +2,7 @@
   "name": "@polished/shorthand-buttons",
   "version": "5.0.0",
   "description": "Shorthand for easily setting the animation property in CSS-In-JS.",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
   "license": "MIT",

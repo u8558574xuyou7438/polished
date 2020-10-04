@@ -1,5 +1,5 @@
 // @flow
-import toColorString from '../toColorString'
+import toColorString from '../src'
 
 describe('toColorString', () => {
   it('should convert a RgbColor to a reduced hex string', () => {
@@ -62,7 +62,7 @@ describe('toColorString', () => {
 
   it('should throw an error if anything else than a RgbColor, RgbaColor, HslColor or HslaColor is provided', () => {
     expect(() => toColorString({ red: 255, green: 1, hue: 240 })).toThrow(
-      'Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.',
+      'Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.'
     )
   })
 })

@@ -1,5 +1,5 @@
 // @flow
-import meetsContrastGuidelines from '../meetsContrastGuidelines'
+import meetsContrastGuidelines from '../src'
 
 describe('meetsContrastGuidelines', () => {
   it('should return the color contrast guidelines of two hex colors', () => {

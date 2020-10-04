@@ -119,7 +119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-create-class-features-plugin@npm:^7.10.4":
+"@babel/helper-create-class-features-plugin@npm:^7.10.4, @babel/helper-create-class-features-plugin@npm:^7.10.5":
   version: 7.10.5
   resolution: "@babel/helper-create-class-features-plugin@npm:7.10.5"
   dependencies:
@@ -681,6 +681,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-typescript@npm:^7.10.4":
+  version: 7.10.4
+  resolution: "@babel/plugin-syntax-typescript@npm:7.10.4"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.10.4
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 9511691ac0d5bb1810055bc8528d217c9bb862097244259707bff96ae65137f1aa23c26df4069ae6b7a7ed0e93bc9c47ea9e50402a7c1576ee8d94ebd5ba3c73
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-transform-arrow-functions@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/plugin-transform-arrow-functions@npm:7.10.4"
@@ -1063,6 +1074,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-transform-typescript@npm:^7.10.4":
+  version: 7.11.0
+  resolution: "@babel/plugin-transform-typescript@npm:7.11.0"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": ^7.10.5
+    "@babel/helper-plugin-utils": ^7.10.4
+    "@babel/plugin-syntax-typescript": ^7.10.4
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 0f2e43de8b8f43ad5c7ffb7c5f35531c471fad5eb6d454773f4bd08f0c3e2ea082d447f8666200696618169ff2035f9d1e26a7c8bd0ce0edddf978fa1362d79e
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-transform-unicode-escapes@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/plugin-transform-unicode-escapes@npm:7.10.4"
@@ -1198,6 +1222,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 8a463709fd9db195c73ad1d6ff2d85ce92976167f20ded23ec49b47754c42fae40f93ff3287fb2e980f0d7f0b7ddf163aa92faf416ef422bdccf722bdae50138
+  languageName: node
+  linkType: hard
+
+"@babel/preset-typescript@npm:^7.10.4":
+  version: 7.10.4
+  resolution: "@babel/preset-typescript@npm:7.10.4"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.10.4
+    "@babel/plugin-transform-typescript": ^7.10.4
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: e14357988cfd69fea5c146bbe7782a1061e6f4ed4ccdaa7aaf6daa1b7c9b34f3502aa48674c877c68bcda44ad8ad5892c5babbf984f7be91eafa1e1417abc8e5
   languageName: node
   linkType: hard
 
@@ -4571,7 +4607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.0.0, chokidar@npm:^3.2.2":
+"chokidar@npm:^3.2.2":
   version: 3.4.2
   resolution: "chokidar@npm:3.4.2"
   dependencies:
@@ -6828,30 +6864,6 @@ __metadata:
   version: 2.0.2
   resolution: "flatted@npm:2.0.2"
   checksum: a3e5fb71ad3c4f0661cd3899864812bcf3f64bdf6aa5f33f967c9c2a8a5f0c7219707e864c0602115fef40e093415f76a43e77afd0a86990904e2217ddb44eb4
-  languageName: node
-  linkType: hard
-
-"flow-bin@npm:^0.133.0":
-  version: 0.133.0
-  resolution: "flow-bin@npm:0.133.0"
-  bin:
-    flow: cli.js
-  checksum: b767946fb8763372127d7c7fd013a8c39de2066e59e19210aba17e6e7bb772bdd19f225b90466ca02bcdb2523463d59eb10d15f671d1ea024612219ed9f44fb2
-  languageName: node
-  linkType: hard
-
-"flow-copy-source@npm:^2.0.8":
-  version: 2.0.9
-  resolution: "flow-copy-source@npm:2.0.9"
-  dependencies:
-    chokidar: ^3.0.0
-    fs-extra: ^8.1.0
-    glob: ^7.0.0
-    kefir: ^3.7.3
-    yargs: ^15.0.1
-  bin:
-    flow-copy-source: ./bin/flow-copy-source.js
-  checksum: 72bea6335d8b773ef2ff2ef38ebcebd7fd216371e79ace8ed69151f4eb8767655960efebd72f0a1f91652bfe3b78e01512c7520c632b1a25c656a68934f186b3
   languageName: node
   linkType: hard
 
@@ -9258,13 +9270,6 @@ fsevents@^1.2.7:
     json-schema: 0.2.3
     verror: 1.10.0
   checksum: ee0177b7ef39e6becf18c586d31fabe15d62be88e7867d3aff86466e4a3de9a2cd47b6e597417aebc1cd3c2d43bc662e79ab5eecdadf3ce0643e909432ed6d2c
-  languageName: node
-  linkType: hard
-
-"kefir@npm:^3.7.3":
-  version: 3.8.7
-  resolution: "kefir@npm:3.8.7"
-  checksum: 38a4d0b85b1e4e3efb8a6708b57568a3575d8d4f646a3f3de08c76d33576addab9a383bab20bc13ef006a29eb635e533516d2e368c0c1d5e200eba86f7789edf
   languageName: node
   linkType: hard
 
@@ -11971,6 +11976,7 @@ fsevents@^1.2.7:
     "@babel/polyfill": ^7.8.7
     "@babel/preset-env": ^7.9.5
     "@babel/preset-flow": ^7.9.0
+    "@babel/preset-typescript": ^7.10.4
     "@babel/runtime": ^7.9.2
     "@commitlint/cli": ^11.0.0
     "@commitlint/config-conventional": ^11.0.0
@@ -11990,8 +11996,6 @@ fsevents@^1.2.7:
     eslint: ^7.2.0
     eslint-config-airbnb-base: ^14.1.0
     eslint-plugin-import: ^2.20.2
-    flow-bin: ^0.133.0
-    flow-copy-source: ^2.0.8
     husky: ^4.2.5
     jest: ^26.0.1
     lerna: ^3.22.1
