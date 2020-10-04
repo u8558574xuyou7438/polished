@@ -404,6 +404,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-babel", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:5.2.1"],
             ["@rollup/plugin-node-resolve", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:9.0.0"],
             ["@rollup/plugin-replace", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:2.3.3"],
+            ["@rollup/plugin-typescript", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:6.0.0"],
             ["@types/node", "npm:14.11.1"],
             ["babel-eslint", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:10.1.0"],
             ["babel-jest", "virtual:3bf5cb85a2e664643c98d2e719d27af43974598ccaa6ea3c355c3ae5c1d5177e21a427bd1a7e70bdce3b4affdbcea39f2ffaa213984380213caeec2a5a6a00da#npm:26.3.0"],
@@ -430,6 +431,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup-plugin-terser", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:7.0.2"],
             ["semantic-release", "npm:17.1.2"],
             ["shx", "npm:0.3.2"],
+            ["tslib", "npm:2.0.1"],
             ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
           ],
           "linkType": "SOFT",
@@ -4192,6 +4194,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/rollup",
             "rollup"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@rollup/plugin-typescript", [
+        ["virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:6.0.0", {
+          "packageLocation": "./.yarn/$$virtual/@rollup-plugin-typescript-virtual-7bd47f3bc9/0/cache/@rollup-plugin-typescript-npm-6.0.0-fe90496f1d-4a47485339.zip/node_modules/@rollup/plugin-typescript/",
+          "packageDependencies": [
+            ["@rollup/plugin-typescript", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:6.0.0"],
+            ["@rollup/pluginutils", "virtual:d68f87137192a492bf5929673e288c0b6469fcfb13752a1207af2f9b26ba2c58575bff21bdd3db1feeb5f6f2878f12b4927948b5548b96df91d9b37d8dfc14fa#npm:3.1.0"],
+            ["@types/rollup", null],
+            ["@types/tslib", null],
+            ["@types/typescript", null],
+            ["resolve", "patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=3388aa"],
+            ["rollup", "npm:2.27.1"],
+            ["tslib", "npm:2.0.1"],
+            ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
+          ],
+          "packagePeers": [
+            "@types/rollup",
+            "@types/tslib",
+            "@types/typescript",
+            "rollup",
+            "tslib",
+            "typescript"
           ],
           "linkType": "HARD",
         }]
@@ -14076,6 +14103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-babel", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:5.2.1"],
             ["@rollup/plugin-node-resolve", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:9.0.0"],
             ["@rollup/plugin-replace", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:2.3.3"],
+            ["@rollup/plugin-typescript", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:6.0.0"],
             ["@types/node", "npm:14.11.1"],
             ["babel-eslint", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:10.1.0"],
             ["babel-jest", "virtual:3bf5cb85a2e664643c98d2e719d27af43974598ccaa6ea3c355c3ae5c1d5177e21a427bd1a7e70bdce3b4affdbcea39f2ffaa213984380213caeec2a5a6a00da#npm:26.3.0"],
@@ -14102,6 +14130,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup-plugin-terser", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:7.0.2"],
             ["semantic-release", "npm:17.1.2"],
             ["shx", "npm:0.3.2"],
+            ["tslib", "npm:2.0.1"],
             ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
           ],
           "linkType": "SOFT",
@@ -16721,6 +16750,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-1.13.0-f5e9ea9b66-5dc3bdaea3.zip/node_modules/tslib/",
           "packageDependencies": [
             ["tslib", "npm:1.13.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/tslib-npm-2.0.1-26f70961f9-7b42337a07.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:2.0.1"]
           ],
           "linkType": "HARD",
         }]

@@ -3058,6 +3058,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-typescript@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@rollup/plugin-typescript@npm:6.0.0"
+  dependencies:
+    "@rollup/pluginutils": ^3.1.0
+    resolve: ^1.17.0
+  peerDependencies:
+    rollup: ^2.14.0
+    tslib: "*"
+    typescript: ">=3.4.0"
+  checksum: 4a474853394d725f68c3b502498d4c7b8d2c2edae2782fa04a0f2f749c2b9bf93dc6b01c7c71f4135fe47ce6697b868e249f70485173fb66b49842a743f37f0b
+  languageName: node
+  linkType: hard
+
 "@rollup/pluginutils@npm:^3.0.8, @rollup/pluginutils@npm:^3.0.9, @rollup/pluginutils@npm:^3.1.0":
   version: 3.1.0
   resolution: "@rollup/pluginutils@npm:3.1.0"
@@ -11963,6 +11977,7 @@ fsevents@^1.2.7:
     "@rollup/plugin-babel": ^5.2.1
     "@rollup/plugin-node-resolve": ^9.0.0
     "@rollup/plugin-replace": ^2.3.2
+    "@rollup/plugin-typescript": ^6.0.0
     "@types/node": ^14.11.1
     babel-eslint: ^10.1.0
     babel-jest: ^26.0.1
@@ -11989,6 +12004,7 @@ fsevents@^1.2.7:
     rollup-plugin-terser: ^7.0.2
     semantic-release: ^17.1.2
     shx: ^0.3.2
+    tslib: ^2.0.1
     typescript: 4.0.3
   languageName: unknown
   linkType: soft
@@ -14400,6 +14416,13 @@ fsevents@^1.2.7:
   version: 1.13.0
   resolution: "tslib@npm:1.13.0"
   checksum: 5dc3bdaea3b67c76ef4a14c28fcb2171da7bcf292fd9c59a260098729626b1ce766c52b588f08e324ed9a0c52ea8a93a815920f980d75981abc9d850fbf310fb
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "tslib@npm:2.0.1"
+  checksum: 7b42337a07f536c9650c72471cdf51317f07eb981692e91b8979fee3f6e20136a8f047e6ecdc5f2f3201132a6cc4e0096fa3c58655eba3803bf7fe739ccd088e
   languageName: node
   linkType: hard
 
