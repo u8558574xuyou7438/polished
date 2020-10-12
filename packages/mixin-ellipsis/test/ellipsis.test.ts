@@ -41,9 +41,9 @@ describe('ellipsis', () => {
       maxWidth: '100%',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
-      webkitBoxOrient: 'vertical',
-      webkitLineClamp: 3,
-      whiteSpace: 'nowrap',
+      WebkitBoxOrient: 'vertical',
+      WebkitLineClamp: 3,
+      whiteSpace: 'normal',
       wordWrap: 'normal',
     })
   })
@@ -54,9 +54,9 @@ describe('ellipsis', () => {
       maxWidth: '500px',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
-      webkitBoxOrient: 'vertical',
-      webkitLineClamp: 3,
-      whiteSpace: 'nowrap',
+      WebkitBoxOrient: 'vertical',
+      WebkitLineClamp: 3,
+      whiteSpace: 'normal',
       wordWrap: 'normal',
     })
   })

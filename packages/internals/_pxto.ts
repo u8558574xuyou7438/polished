@@ -1,6 +1,6 @@
 // @flow
 import endsWith from './_endsWith'
-import stripUnit from '@polished/helper-strip-unit'
+import stripUnit from '../helper-strip-unit'
 import PolishedError from './_errors'
 
 /**

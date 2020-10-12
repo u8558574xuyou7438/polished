@@ -1,7 +1,7 @@
 {
-  "name": "@polished/mixin-hi-dpi",
+  "name": "@polished/preset-math-default",
   "version": "5.0.0",
-  "description": "Mixin for calculating a linear interpolation between two values.",
+  "description": "Default symbols for math helper.",
   "main": "src/index.ts",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/styled-components/polished.git",
-    "directory": "packages/mixin-hi-dpi"
+    "directory": "packages/preset-math-default"
   },
   "keywords": [
     "styled-components",
@@ -24,6 +24,7 @@
     "inline-styles",
     "react",
     "flow",
-    "typescript"
+    "typescript",
+    "math"
   ]
 }

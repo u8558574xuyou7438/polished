@@ -1,7 +1,7 @@
 {
   "name": "@polished/helper-math",
   "version": "5.0.0",
-  "description": "",
+  "description": "Helper for doing math with CSS Units.",
   "main": "src/index.ts",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
@@ -24,7 +24,12 @@
     "inline-styles",
     "react",
     "flow",
-    "typescript",
-    "animation"
-  ]
+    "typescript"
+  ],
+  "dependencies": {
+    "@polished/preset-math-default": "workspace:*"
+  },
+  "devDependencies": {
+    "@polished/preset-math-exponential": "workspace:*"
+  }
 }

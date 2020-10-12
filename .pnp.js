@@ -211,7 +211,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/mixin-font-face"
       },
       {
-        "name": "mixin-hi-dpi-d57952",
+        "name": "@polished/mixin-hi-dpi",
         "reference": "workspace:packages/mixin-hi-dpi"
       },
       {
@@ -235,16 +235,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/mixin-radial-gradient"
       },
       {
-        "name": "mixin-retina-image-286b94",
+        "name": "@polished/mixin-retina-image",
         "reference": "workspace:packages/mixin-retina-image"
       },
       {
-        "name": "mixin-triangle-3ed0e1",
+        "name": "@polished/mixin-triangle",
         "reference": "workspace:packages/mixin-triangle"
       },
       {
         "name": "mixin-word-wrap-c3ef68",
         "reference": "workspace:packages/mixin-word-wrap"
+      },
+      {
+        "name": "@polished/preset-math-default",
+        "reference": "workspace:packages/preset-math-default"
+      },
+      {
+        "name": "@polished/preset-math-exponential",
+        "reference": "workspace:packages/preset-math-exponential"
       },
       {
         "name": "@polished/shorthand-animation",
@@ -325,6 +333,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@polished/mixin-between", ["workspace:packages/mixin-between"]],
       ["@polished/mixin-cover", ["workspace:packages/mixin-cover"]],
       ["@polished/mixin-fluid-range", ["workspace:packages/mixin-fluid-range"]],
+      ["@polished/mixin-hi-dpi", ["workspace:packages/mixin-hi-dpi"]],
+      ["@polished/mixin-retina-image", ["workspace:packages/mixin-retina-image"]],
+      ["@polished/mixin-triangle", ["workspace:packages/mixin-triangle"]],
+      ["@polished/preset-math-default", ["workspace:packages/preset-math-default"]],
+      ["@polished/preset-math-exponential", ["workspace:packages/preset-math-exponential"]],
       ["@polished/shorthand-animation", ["workspace:packages/shorthand-animation"]],
       ["@polished/shorthand-background-images", ["workspace:packages/shorthand-background-images"]],
       ["@polished/shorthand-backgrounds", ["workspace:packages/shorthand-backgrounds"]],
@@ -372,14 +385,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["mixin-clear-fix-1dd035", ["workspace:packages/mixin-clear-fix"]],
       ["mixin-ellipsis-ca2c63", ["workspace:packages/mixin-ellipsis"]],
       ["mixin-font-face-922960", ["workspace:packages/mixin-font-face"]],
-      ["mixin-hi-dpi-d57952", ["workspace:packages/mixin-hi-dpi"]],
       ["mixin-hide-text-b8051c", ["workspace:packages/mixin-hide-text"]],
       ["mixin-hide-visually-bde1e9", ["workspace:packages/mixin-hide-visually"]],
       ["mixin-linear-gradient-2f565e", ["workspace:packages/mixin-linear-gradient"]],
       ["mixin-normalize-df4822", ["workspace:packages/mixin-normalize"]],
       ["mixin-radial-gradient-18a930", ["workspace:packages/mixin-radial-gradient"]],
-      ["mixin-retina-image-286b94", ["workspace:packages/mixin-retina-image"]],
-      ["mixin-triangle-3ed0e1", ["workspace:packages/mixin-triangle"]],
       ["mixin-word-wrap-c3ef68", ["workspace:packages/mixin-word-wrap"]],
       ["polished", ["workspace:."]]
     ],
@@ -3983,7 +3993,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/helper-math", {
           "packageLocation": "./packages/helper-math/",
           "packageDependencies": [
-            ["@polished/helper-math", "workspace:packages/helper-math"]
+            ["@polished/helper-math", "workspace:packages/helper-math"],
+            ["@polished/preset-math-default", "workspace:packages/preset-math-default"],
+            ["@polished/preset-math-exponential", "workspace:packages/preset-math-exponential"]
           ],
           "linkType": "SOFT",
         }]
@@ -4041,6 +4053,53 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/mixin-fluid-range", "workspace:packages/mixin-fluid-range"],
             ["@polished/mixin-between", "workspace:packages/mixin-between"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/mixin-hi-dpi", [
+        ["workspace:packages/mixin-hi-dpi", {
+          "packageLocation": "./packages/mixin-hi-dpi/",
+          "packageDependencies": [
+            ["@polished/mixin-hi-dpi", "workspace:packages/mixin-hi-dpi"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/mixin-retina-image", [
+        ["workspace:packages/mixin-retina-image", {
+          "packageLocation": "./packages/mixin-retina-image/",
+          "packageDependencies": [
+            ["@polished/mixin-retina-image", "workspace:packages/mixin-retina-image"],
+            ["@polished/mixin-hi-dpi", "workspace:packages/mixin-hi-dpi"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/mixin-triangle", [
+        ["workspace:packages/mixin-triangle", {
+          "packageLocation": "./packages/mixin-triangle/",
+          "packageDependencies": [
+            ["@polished/mixin-triangle", "workspace:packages/mixin-triangle"],
+            ["@polished/helper-get-value-and-unit", "workspace:packages/helper-get-value-and-unit"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/preset-math-default", [
+        ["workspace:packages/preset-math-default", {
+          "packageLocation": "./packages/preset-math-default/",
+          "packageDependencies": [
+            ["@polished/preset-math-default", "workspace:packages/preset-math-default"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/preset-math-exponential", [
+        ["workspace:packages/preset-math-exponential", {
+          "packageLocation": "./packages/preset-math-exponential/",
+          "packageDependencies": [
+            ["@polished/preset-math-exponential", "workspace:packages/preset-math-exponential"]
           ],
           "linkType": "SOFT",
         }]
@@ -12454,15 +12513,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["mixin-hi-dpi-d57952", [
-        ["workspace:packages/mixin-hi-dpi", {
-          "packageLocation": "./packages/mixin-hi-dpi/",
-          "packageDependencies": [
-            ["mixin-hi-dpi-d57952", "workspace:packages/mixin-hi-dpi"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
       ["mixin-hide-text-b8051c", [
         ["workspace:packages/mixin-hide-text", {
           "packageLocation": "./packages/mixin-hide-text/",
@@ -12504,24 +12554,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/mixin-radial-gradient/",
           "packageDependencies": [
             ["mixin-radial-gradient-18a930", "workspace:packages/mixin-radial-gradient"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["mixin-retina-image-286b94", [
-        ["workspace:packages/mixin-retina-image", {
-          "packageLocation": "./packages/mixin-retina-image/",
-          "packageDependencies": [
-            ["mixin-retina-image-286b94", "workspace:packages/mixin-retina-image"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["mixin-triangle-3ed0e1", [
-        ["workspace:packages/mixin-triangle", {
-          "packageLocation": "./packages/mixin-triangle/",
-          "packageDependencies": [
-            ["mixin-triangle-3ed0e1", "workspace:packages/mixin-triangle"]
           ],
           "linkType": "SOFT",
         }]

@@ -2900,6 +2900,9 @@ __metadata:
 "@polished/helper-math@workspace:packages/helper-math":
   version: 0.0.0-use.local
   resolution: "@polished/helper-math@workspace:packages/helper-math"
+  dependencies:
+    "@polished/preset-math-default": "workspace:*"
+    "@polished/preset-math-exponential": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2942,6 +2945,40 @@ __metadata:
   resolution: "@polished/mixin-fluid-range@workspace:packages/mixin-fluid-range"
   dependencies:
     "@polished/mixin-between": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/mixin-hi-dpi@workspace:*, @polished/mixin-hi-dpi@workspace:packages/mixin-hi-dpi":
+  version: 0.0.0-use.local
+  resolution: "@polished/mixin-hi-dpi@workspace:packages/mixin-hi-dpi"
+  languageName: unknown
+  linkType: soft
+
+"@polished/mixin-retina-image@workspace:packages/mixin-retina-image":
+  version: 0.0.0-use.local
+  resolution: "@polished/mixin-retina-image@workspace:packages/mixin-retina-image"
+  dependencies:
+    "@polished/mixin-hi-dpi": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/mixin-triangle@workspace:packages/mixin-triangle":
+  version: 0.0.0-use.local
+  resolution: "@polished/mixin-triangle@workspace:packages/mixin-triangle"
+  dependencies:
+    "@polished/helper-get-value-and-unit": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/preset-math-default@workspace:*, @polished/preset-math-default@workspace:packages/preset-math-default":
+  version: 0.0.0-use.local
+  resolution: "@polished/preset-math-default@workspace:packages/preset-math-default"
+  languageName: unknown
+  linkType: soft
+
+"@polished/preset-math-exponential@workspace:*, @polished/preset-math-exponential@workspace:packages/preset-math-exponential":
+  version: 0.0.0-use.local
+  resolution: "@polished/preset-math-exponential@workspace:packages/preset-math-exponential"
   languageName: unknown
   linkType: soft
 
@@ -10460,12 +10497,6 @@ fsevents@^1.2.7:
   languageName: unknown
   linkType: soft
 
-"mixin-hi-dpi-d57952@workspace:packages/mixin-hi-dpi":
-  version: 0.0.0-use.local
-  resolution: "mixin-hi-dpi-d57952@workspace:packages/mixin-hi-dpi"
-  languageName: unknown
-  linkType: soft
-
 "mixin-hide-text-b8051c@workspace:packages/mixin-hide-text":
   version: 0.0.0-use.local
   resolution: "mixin-hide-text-b8051c@workspace:packages/mixin-hide-text"
@@ -10493,18 +10524,6 @@ fsevents@^1.2.7:
 "mixin-radial-gradient-18a930@workspace:packages/mixin-radial-gradient":
   version: 0.0.0-use.local
   resolution: "mixin-radial-gradient-18a930@workspace:packages/mixin-radial-gradient"
-  languageName: unknown
-  linkType: soft
-
-"mixin-retina-image-286b94@workspace:packages/mixin-retina-image":
-  version: 0.0.0-use.local
-  resolution: "mixin-retina-image-286b94@workspace:packages/mixin-retina-image"
-  languageName: unknown
-  linkType: soft
-
-"mixin-triangle-3ed0e1@workspace:packages/mixin-triangle":
-  version: 0.0.0-use.local
-  resolution: "mixin-triangle-3ed0e1@workspace:packages/mixin-triangle"
   languageName: unknown
   linkType: soft
 
