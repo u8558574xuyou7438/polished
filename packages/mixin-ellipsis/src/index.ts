@@ -26,7 +26,7 @@ import type { Styles } from '../../types/style'
  *   'wordWrap': 'normal'
  * }
  */
-export default function ellipsis(width?: ?string | ?number, lines?: number = 1): Styles {
+export default function ellipsis(width?: ?(string | ?number), lines?: number = 1): Styles {
   const styles = {
     display: 'inline-block',
     maxWidth: width || '100%',
@@ -39,9 +39,10 @@ export default function ellipsis(width?: ?string | ?number, lines?: number = 1):
   return lines > 1
     ? {
         ...styles,
+        WebkitBoxOrient: 'vertical',
+        WebkitLineClamp: lines,
         display: '-webkit-box',
-        webkitLineClamp: lines,
-        webkitBoxOrient: 'vertical',
+        whiteSpace: 'normal',
       }
     : styles
 }
