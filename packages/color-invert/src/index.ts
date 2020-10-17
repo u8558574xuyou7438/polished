@@ -1,6 +1,6 @@
 // @flow
-import parseToRgb from './parseToRgb'
-import toColorString from './toColorString'
+import parseToRgb from '@polished/color-parse-to-rgb'
+import toColorString from '@polished/color-to-color-string'
 
 /**
  * Inverts the red, green and blue values of a color.

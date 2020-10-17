@@ -1,7 +1,7 @@
 // @flow
 import curry from '../../internals/_curry'
-import parseToHsl from './parseToHsl'
-import toColorString from './toColorString'
+import parseToHsl from '@polished/color-parse-to-hsl'
+import toColorString from '@polished/color-to-color-string'
 
 /**
  * Sets the hue of a color to the provided value. The hue range can be

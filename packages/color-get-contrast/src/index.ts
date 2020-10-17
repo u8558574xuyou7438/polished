@@ -1,5 +1,5 @@
 // @flow
-import getLuminance from './getLuminance'
+import getLuminance from '@polished/color-get-luminance'
 
 /**
  * Returns the contrast ratio between two colors based on
@@ -15,6 +15,6 @@ export default function getContrast(color1: string, color2: string): number {
     (luminance1 > luminance2
       ? (luminance1 + 0.05) / (luminance2 + 0.05)
       : (luminance2 + 0.05) / (luminance1 + 0.05)
-    ).toFixed(2),
+    ).toFixed(2)
   )
 }

@@ -1,6 +1,6 @@
 // @flow
-import parseToHsl from './parseToHsl'
-import toColorString from './toColorString'
+import parseToHsl from '@polished/color-parse-to-hsl'
+import toColorString from '@polished/color-to-color-string'
 
 /**
  * Converts the color to a grayscale, by reducing its saturation to 0.

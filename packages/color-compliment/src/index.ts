@@ -1,6 +1,6 @@
 // @flow
-import parseToHsl from './parseToHsl'
-import toColorString from './toColorString'
+import parseToHsl from '@polished/color-parse-to-hsl'
+import toColorString from '@polished/color-to-color-string'
 
 /**
  * Returns the complement of the provided color. This is identical to adjustHue(180, <color>).

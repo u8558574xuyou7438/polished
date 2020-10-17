@@ -1,8 +1,8 @@
 // @flow
-import hsl from './hsl'
+import hsl from '@polished/color-hsl'
 import hsla from './hsla'
-import rgb from './rgb'
-import rgba from './rgba'
+import rgb from '@polished/color-rgb'
+import rgba from '@polished/color-rgba'
 import PolishedError from '../../internals/_errors'
 
 const isRgb = (color: Object): boolean =>

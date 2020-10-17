@@ -1,6 +1,6 @@
 // @flow
-import parseToHsl from './parseToHsl'
-import toColorString from './toColorString'
+import parseToHsl from '@polished/color-parse-to-hsl'
+import toColorString from '@polished/color-to-color-string'
 import curry from '../../internals/_curry'
 
 /**

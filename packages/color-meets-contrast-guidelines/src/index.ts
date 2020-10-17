@@ -1,5 +1,5 @@
 // @flow
-import getContrast from './getContrast'
+import getContrast from '@polished/color-get-contrast'
 
 import type { ContrastScores } from '../types/color'
 

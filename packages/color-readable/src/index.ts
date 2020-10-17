@@ -1,6 +1,6 @@
 // @flow
-import getContrast from './getContrast'
-import getLuminance from './getLuminance'
+import getContrast from '@polished/color-get-contrast'
+import getLuminance from '@polished/color-get-luminance'
 
 const defaultLightReturnColor = '#000'
 const defaultDarkReturnColor = '#fff'
@@ -44,7 +44,7 @@ export default function readableColor(
   color: string,
   lightReturnColor?: string = defaultLightReturnColor,
   darkReturnColor?: string = defaultDarkReturnColor,
-  strict?: boolean = true,
+  strict?: boolean = true
 ): string {
   const isLightColor = getLuminance(color) > 0.179
   const preferredReturnColor = isLightColor ? lightReturnColor : darkReturnColor

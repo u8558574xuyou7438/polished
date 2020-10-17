@@ -1,6 +1,6 @@
 // @flow
 import curry from '../../internals/_curry'
-import mix from './mix'
+import mix from '@polished/color-mix'
 
 /**
  * Shades a color by mixing it with black. `shade` can produce

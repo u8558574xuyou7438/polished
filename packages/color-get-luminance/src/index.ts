@@ -1,5 +1,5 @@
 // @flow
-import parseToRgb from './parseToRgb'
+import parseToRgb from '@polished/color-parse-to-rgb'
 
 /**
  * Returns a number (float) representing the luminance of a color.
