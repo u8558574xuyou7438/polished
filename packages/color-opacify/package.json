@@ -1,15 +1,19 @@
 {
+  "name": "@polished/color-opacify",
   "version": "5.0.0",
-  "description": "",
+  "description": "Changes the hue of a color.",
+  "main": "src/index.ts",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/styled-components/polished.git"
+    "url": "git+https://github.com/styled-components/polished.git",
+    "directory": "packages/color-opacify"
   },
   "keywords": [
     "styled-components",
@@ -20,11 +24,10 @@
     "inline-styles",
     "react",
     "flow",
-    "typescript",
-    "color manipulate",
-    "color manipulation",
-    "curried color manipulation",
-    "color",
-    "colour"
-  ]
+    "typescript"
+  ],
+  "dependencies": {
+    "@polished/color-parse-to-rgb": "workspace:*",
+    "@polished/color-rgba": "workspace:*"
+  }
 }
