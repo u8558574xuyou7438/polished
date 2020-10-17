@@ -1,6 +1,6 @@
 // @flow
-import hslToHex from '../internalHelpers/_hslToHex'
-import PolishedError from '../internalHelpers/_errors'
+import hslToHex from '../../internals/_hslToHex'
+import PolishedError from '../../internals/_errors'
 
 import type { HslColor } from '../types/color'
 
@@ -30,12 +30,12 @@ import type { HslColor } from '../types/color'
 export default function hsl(
   value: HslColor | number,
   saturation?: number,
-  lightness?: number,
+  lightness?: number
 ): string {
   if (
-    typeof value === 'number'
-    && typeof saturation === 'number'
-    && typeof lightness === 'number'
+    typeof value === 'number' &&
+    typeof saturation === 'number' &&
+    typeof lightness === 'number'
   ) {
     return hslToHex(value, saturation, lightness)
   } else if (typeof value === 'object' && saturation === undefined && lightness === undefined) {

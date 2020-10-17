@@ -3,27 +3,31 @@ import hsl from './hsl'
 import hsla from './hsla'
 import rgb from './rgb'
 import rgba from './rgba'
-import PolishedError from '../internalHelpers/_errors'
+import PolishedError from '../../internals/_errors'
 
-const isRgb = (color: Object): boolean => typeof color.red === 'number'
-  && typeof color.green === 'number'
-  && typeof color.blue === 'number'
-  && (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
+const isRgb = (color: Object): boolean =>
+  typeof color.red === 'number' &&
+  typeof color.green === 'number' &&
+  typeof color.blue === 'number' &&
+  (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
 
-const isRgba = (color: Object): boolean => typeof color.red === 'number'
-  && typeof color.green === 'number'
-  && typeof color.blue === 'number'
-  && typeof color.alpha === 'number'
+const isRgba = (color: Object): boolean =>
+  typeof color.red === 'number' &&
+  typeof color.green === 'number' &&
+  typeof color.blue === 'number' &&
+  typeof color.alpha === 'number'
 
-const isHsl = (color: Object): boolean => typeof color.hue === 'number'
-  && typeof color.saturation === 'number'
-  && typeof color.lightness === 'number'
-  && (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
+const isHsl = (color: Object): boolean =>
+  typeof color.hue === 'number' &&
+  typeof color.saturation === 'number' &&
+  typeof color.lightness === 'number' &&
+  (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
 
-const isHsla = (color: Object): boolean => typeof color.hue === 'number'
-  && typeof color.saturation === 'number'
-  && typeof color.lightness === 'number'
-  && typeof color.alpha === 'number'
+const isHsla = (color: Object): boolean =>
+  typeof color.hue === 'number' &&
+  typeof color.saturation === 'number' &&
+  typeof color.lightness === 'number' &&
+  typeof color.alpha === 'number'
 
 /**
  * Converts a RgbColor, RgbaColor, HslColor or HslaColor object to a color string.

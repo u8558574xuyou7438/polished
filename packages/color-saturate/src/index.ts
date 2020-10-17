@@ -1,6 +1,6 @@
 // @flow
-import curry from '../internalHelpers/_curry'
-import guard from '../internalHelpers/_guard'
+import curry from '../../internals/_curry'
+import guard from '../../internals/_guard'
 import parseToHsl from './parseToHsl'
 import toColorString from './toColorString'
 

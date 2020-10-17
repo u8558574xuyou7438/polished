@@ -1,5 +1,5 @@
 // @flow
-import curry from '../internalHelpers/_curry'
+import curry from '../../internals/_curry'
 import mix from './mix'
 
 /**

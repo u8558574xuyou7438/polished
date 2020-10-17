@@ -1,5 +1,5 @@
 // @flow
-import curry from '../internalHelpers/_curry'
+import curry from '../../internals/_curry'
 import rgba from './rgba'
 import parseToRgb from './parseToRgb'
 

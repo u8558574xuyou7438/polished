@@ -1,7 +1,7 @@
 // @flow
-import hslToHex from '../internalHelpers/_hslToHex'
-import hslToRgb from '../internalHelpers/_hslToRgb'
-import PolishedError from '../internalHelpers/_errors'
+import hslToHex from '../../internals/_hslToHex'
+import hslToRgb from '../../internals/_hslToRgb'
+import PolishedError from '../../internals/_errors'
 
 import type { HslaColor } from '../types/color'
 
@@ -35,22 +35,22 @@ export default function hsla(
   value: HslaColor | number,
   saturation?: number,
   lightness?: number,
-  alpha?: number,
+  alpha?: number
 ): string {
   if (
-    typeof value === 'number'
-    && typeof saturation === 'number'
-    && typeof lightness === 'number'
-    && typeof alpha === 'number'
+    typeof value === 'number' &&
+    typeof saturation === 'number' &&
+    typeof lightness === 'number' &&
+    typeof alpha === 'number'
   ) {
     return alpha >= 1
       ? hslToHex(value, saturation, lightness)
       : `rgba(${hslToRgb(value, saturation, lightness)},${alpha})`
   } else if (
-    typeof value === 'object'
-    && saturation === undefined
-    && lightness === undefined
-    && alpha === undefined
+    typeof value === 'object' &&
+    saturation === undefined &&
+    lightness === undefined &&
+    alpha === undefined
   ) {
     return value.alpha >= 1
       ? hslToHex(value.hue, value.saturation, value.lightness)
