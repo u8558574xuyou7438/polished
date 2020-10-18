@@ -1,8 +1,6 @@
 // @flow
 
-import type {
-  HslColor, HslaColor, RgbColor, RgbaColor,
-} from '../types/color'
+import type { HslColor, HslaColor, RgbColor, RgbaColor } from '../types/color'
 
 function rgbToHsl(color: RgbColor | RgbaColor): HslColor | HslaColor {
   // make sure rgb are contained in a set of [0, 255]
@@ -23,9 +21,8 @@ function rgbToHsl(color: RgbColor | RgbaColor): HslColor | HslaColor {
         lightness,
         alpha: color.alpha,
       }
-    } else {
-      return { hue: 0, saturation: 0, lightness }
     }
+    return { hue: 0, saturation: 0, lightness }
   }
 
   let hue

@@ -42,7 +42,8 @@ export default function cssVar(
 
   if (variableValue) {
     return variableValue.trim()
-  } else if (defaultValue) {
+  }
+  if (defaultValue) {
     return defaultValue
   }
 

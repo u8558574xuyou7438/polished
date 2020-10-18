@@ -9,7 +9,7 @@
  * @property {?string}  fallback
  */
 export type LinearGradientConfiguration = {
-  colorStops: Array<string>,
-  toDirection?: string,
-  fallback?: string,
+  colorStops: Array<string>
+  toDirection?: string
+  fallback?: string
 }

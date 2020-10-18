@@ -2,8 +2,6 @@
 
 // based on https://github.com/styled-components/styled-components/blob/fcf6f3804c57a14dd7984dfab7bc06ee2edca044/src/utils/error.js
 
-declare var preval: Function
-
 /**
  * Parse errors.md and turn it into a simple hash of code: message
  * @private
@@ -47,7 +45,7 @@ export default class PolishedError extends Error {
   constructor(code: string | number, ...args: Array<any>) {
     if (process.env.NODE_ENV === 'production') {
       super(
-        `An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#${code} for more information.`,
+        `An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#${code} for more information.`
       )
     } else {
       super(format(ERRORS[code], ...args))

@@ -29,7 +29,7 @@
  * }
  */
 
-export default function hiDPI(ratio?: number = 1.3): string {
+export default function hiDPI(ratio? = 1.3): string {
   return `
     @media only screen and (-webkit-min-device-pixel-ratio: ${ratio}),
     only screen and (min--moz-device-pixel-ratio: ${ratio}),

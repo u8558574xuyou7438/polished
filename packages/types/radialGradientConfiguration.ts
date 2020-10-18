@@ -11,9 +11,9 @@
  * @property {?string}  shape
  */
 export type RadialGradientConfiguration = {
-  colorStops: Array<string>,
-  extent?: string,
-  fallback?: string,
-  position?: string,
-  shape?: string,
+  colorStops: Array<string>
+  extent?: string
+  fallback?: string
+  position?: string
+  shape?: string
 }

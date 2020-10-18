@@ -40,7 +40,7 @@
     "build:watch": "npm-watch",
     "test": "jest packages",
     "typescript": "tsc ./typescript-test.ts --noEmit --target es6 --module es2015 --moduleResolution node --allowJs",
-    "lint": "eslint packages",
+    "lint": "eslint packages --fix",
     "flow": "flow check && flow batch-coverage packages/ --show-all --strip-root",
     "prepare": "yarn build && yarn typescript",
     "semantic-release": "semantic-release"
@@ -50,7 +50,6 @@
   ],
   "lint-staged": {
     "src/**/*.ts": [
-      "prettier --write",
       "eslint --fix"
     ]
   },
@@ -74,8 +73,10 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-replace": "^2.3.2",
     "@rollup/plugin-typescript": "^6.0.0",
+    "@tsconfig/recommended": "^1.0.1",
     "@types/node": "^14.11.1",
-    "babel-eslint": "^10.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "babel-jest": "^26.0.1",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
@@ -83,15 +84,15 @@
     "commitizen": "^4.2.1",
     "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.1.0",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lerna": "^3.22.1",
     "lint-staged": "^10.4.0",
     "npm-watch": "^0.7.0",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.2",
     "ramda": "^0.27.0",
     "rollup": "^2.27.1",
     "rollup-plugin-sourcemaps": "^0.6.2",
@@ -99,7 +100,7 @@
     "semantic-release": "^17.1.2",
     "shx": "^0.3.2",
     "tslib": "^2.0.1",
-    "typescript": "4.0.3"
+    "typescript": "^4.0.3"
   },
   "config": {
     "commitizen": {

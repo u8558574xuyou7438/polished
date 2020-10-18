@@ -3,10 +3,9 @@
 function factorial(a: number): number {
   if (a % 1 || !(+a >= 0)) return NaN
   if (a > 170) return Infinity
-  else if (a === 0) return 1
-  else {
-    return a * factorial(a - 1)
-  }
+  if (a === 0) return 1
+
+  return a * factorial(a - 1)
 }
 
 function power(a: number, b: number): number {

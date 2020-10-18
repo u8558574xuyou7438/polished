@@ -44,7 +44,7 @@ export default function readableColor(
   color: string,
   lightReturnColor?: string = defaultLightReturnColor,
   darkReturnColor?: string = defaultDarkReturnColor,
-  strict?: boolean = true
+  strict? = true
 ): string {
   const isLightColor = getLuminance(color) > 0.179
   const preferredReturnColor = isLightColor ? lightReturnColor : darkReturnColor

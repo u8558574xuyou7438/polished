@@ -1,7 +1,7 @@
 // @flow
-import curry from '../../internals/_curry'
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
+import curry from '../../internals/_curry'
 
 /**
  * Sets the hue of a color to the provided value. The hue range can be
@@ -35,5 +35,5 @@ function setHue(hue: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedSetHue = curry/* ::<number | string, string, string> */(setHue)
+const curriedSetHue = curry/* ::<number | string, string, string> */(setHue);
 export default curriedSetHue

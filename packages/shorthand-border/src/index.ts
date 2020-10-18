@@ -57,12 +57,11 @@ export default function border(
       [`border${capitalizeString(sideKeyword)}Style`]: values[1],
       [`border${capitalizeString(sideKeyword)}Color`]: values[2],
     }
-  } else {
-    values.unshift(sideKeyword)
-    return {
-      borderWidth: values[0],
-      borderStyle: values[1],
-      borderColor: values[2],
-    }
+  }
+  values.unshift(sideKeyword)
+  return {
+    borderWidth: values[0],
+    borderStyle: values[1],
+    borderColor: values[2],
   }
 }

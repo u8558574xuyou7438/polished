@@ -1,6 +1,6 @@
 // @flow
-import important from '../src'
 import cover from '@polished/mixin-cover'
+import important from '../src'
 
 describe('important', () => {
   it('should add !important to a single rule in a flat style block', () => {

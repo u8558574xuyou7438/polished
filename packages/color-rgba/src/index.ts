@@ -48,7 +48,8 @@ export default function rgba(
   if (typeof firstValue === 'string' && typeof secondValue === 'number') {
     const rgbValue = parseToRGB(firstValue)
     return `rgba(${rgbValue.red},${rgbValue.green},${rgbValue.blue},${secondValue})`
-  } else if (
+  }
+  if (
     typeof firstValue === 'number' &&
     typeof secondValue === 'number' &&
     typeof thirdValue === 'number' &&
@@ -57,7 +58,8 @@ export default function rgba(
     return fourthValue >= 1
       ? rgb(firstValue, secondValue, thirdValue)
       : `rgba(${firstValue},${secondValue},${thirdValue},${fourthValue})`
-  } else if (
+  }
+  if (
     typeof firstValue === 'object' &&
     secondValue === undefined &&
     thirdValue === undefined &&

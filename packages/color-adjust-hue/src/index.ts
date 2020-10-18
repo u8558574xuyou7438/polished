@@ -37,5 +37,5 @@ function adjustHue(degree: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedAdjustHue = curry/* ::<number | string, string, string> */(adjustHue)
+const curriedAdjustHue = curry/* ::<number | string, string, string> */(adjustHue);
 export default curriedAdjustHue

@@ -1,6 +1,6 @@
 // @flow
-import curry from '../../internals/_curry'
 import mix from '@polished/color-mix'
+import curry from '../../internals/_curry'
 
 /**
  * Tints a color by mixing it with white. `tint` can produce
@@ -31,5 +31,5 @@ function tint(percentage: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedTint = curry/* ::<number | string, string, string> */(tint)
+const curriedTint = curry/* ::<number | string, string, string> */(tint);
 export default curriedTint

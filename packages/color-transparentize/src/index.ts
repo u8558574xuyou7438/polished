@@ -1,8 +1,8 @@
 // @flow
-import curry from '../../internals/_curry'
-import guard from '../../internals/_guard'
 import rgba from '@polished/color-rgba'
 import parseToRgb from '@polished/color-parse-to-rgb'
+import curry from '../../internals/_curry'
+import guard from '../../internals/_guard'
 
 /**
  * Decreases the opacity of a color. Its range for the amount is between 0 to 1.
@@ -45,5 +45,5 @@ function transparentize(amount: number | string, color: string): string {
 // prettier-ignore
 const curriedTransparentize = curry/* ::<number | string, string, string> */(
   transparentize,
-)
+);
 export default curriedTransparentize

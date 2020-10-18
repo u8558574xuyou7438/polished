@@ -36,9 +36,8 @@ export default function transitions(...properties: Array<string | Array<string>>
     return {
       transition: transitionsString,
     }
-  } else {
-    return {
-      transition: properties.join(', '),
-    }
+  }
+  return {
+    transition: properties.join(', '),
   }
 }

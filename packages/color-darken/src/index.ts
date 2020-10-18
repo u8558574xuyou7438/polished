@@ -1,8 +1,8 @@
 // @flow
-import curry from '../../internals/_curry'
-import guard from '../../internals/_guard'
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
+import curry from '../../internals/_curry'
+import guard from '../../internals/_guard'
 
 /**
  * Returns a string value for the darkened color.
@@ -37,5 +37,5 @@ function darken(amount: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedDarken = curry/* ::<number | string, string, string> */(darken)
+const curriedDarken = curry/* ::<number | string, string, string> */(darken);
 export default curriedDarken

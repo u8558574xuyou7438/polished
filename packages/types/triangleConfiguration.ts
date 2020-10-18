@@ -12,9 +12,9 @@ import type { SideKeyword } from './sideKeyword'
  * @property {number}  height
  */
 export type TriangleConfiguration = {
-  backgroundColor?: string,
-  foregroundColor: string,
-  height: number | string,
-  width: number | string,
-  pointingDirection: SideKeyword,
+  backgroundColor?: string
+  foregroundColor: string
+  height: number | string
+  width: number | string
+  pointingDirection: SideKeyword
 }

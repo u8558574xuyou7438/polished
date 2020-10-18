@@ -46,7 +46,8 @@ export default function hsla(
     return alpha >= 1
       ? hslToHex(value, saturation, lightness)
       : `rgba(${hslToRgb(value, saturation, lightness)},${alpha})`
-  } else if (
+  }
+  if (
     typeof value === 'object' &&
     saturation === undefined &&
     lightness === undefined &&

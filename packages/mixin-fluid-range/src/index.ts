@@ -49,8 +49,8 @@ import type { Styles } from '../../types/style'
  */
 export default function fluidRange(
   cssProp: Array<FluidRangeConfiguration> | FluidRangeConfiguration,
-  minScreen?: string = '320px',
-  maxScreen?: string = '1200px'
+  minScreen? = '320px',
+  maxScreen? = '1200px'
 ): Styles {
   if ((!Array.isArray(cssProp) && typeof cssProp !== 'object') || cssProp === null) {
     throw new PolishedError(49)
@@ -79,19 +79,18 @@ export default function fluidRange(
       ...fallbacks,
       ...mediaQueries,
     }
-  } else {
-    if (!cssProp.prop || !cssProp.fromSize || !cssProp.toSize) {
-      throw new PolishedError(51)
-    }
+  }
+  if (!cssProp.prop || !cssProp.fromSize || !cssProp.toSize) {
+    throw new PolishedError(51)
+  }
 
-    return {
-      [cssProp.prop]: cssProp.fromSize,
-      [`@media (min-width: ${minScreen})`]: {
-        [cssProp.prop]: between(cssProp.fromSize, cssProp.toSize, minScreen, maxScreen),
-      },
-      [`@media (min-width: ${maxScreen})`]: {
-        [cssProp.prop]: cssProp.toSize,
-      },
-    }
+  return {
+    [cssProp.prop]: cssProp.fromSize,
+    [`@media (min-width: ${minScreen})`]: {
+      [cssProp.prop]: between(cssProp.fromSize, cssProp.toSize, minScreen, maxScreen),
+    },
+    [`@media (min-width: ${maxScreen})`]: {
+      [cssProp.prop]: cssProp.toSize,
+    },
   }
 }

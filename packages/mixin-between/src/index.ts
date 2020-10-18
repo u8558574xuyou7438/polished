@@ -28,8 +28,8 @@ import PolishedError from '../../internals/_errors'
 export default function between(
   fromSize: string | number,
   toSize: string | number,
-  minScreen?: string = '320px',
-  maxScreen?: string = '1200px'
+  minScreen? = '320px',
+  maxScreen? = '1200px'
 ): string {
   const [unitlessFromSize, fromSizeUnit] = getValueAndUnit(fromSize)
   const [unitlessToSize, toSizeUnit] = getValueAndUnit(toSize)

@@ -1,6 +1,6 @@
 // @flow
-import curry from '../../internals/_curry'
 import mix from '@polished/color-mix'
+import curry from '../../internals/_curry'
 
 /**
  * Shades a color by mixing it with black. `shade` can produce
@@ -31,5 +31,5 @@ function shade(percentage: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedShade = curry/* ::<number | string, string, string> */(shade)
+const curriedShade = curry/* ::<number | string, string, string> */(shade);
 export default curriedShade

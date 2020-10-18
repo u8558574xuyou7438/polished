@@ -1,7 +1,7 @@
 // @flow
-import curry from '../../internals/_curry'
 import rgba from '@polished/color-rgba'
 import parseToRgb from '@polished/color-parse-to-rgb'
+import curry from '../../internals/_curry'
 
 /**
  * Mixes the two provided colors together by calculating the average of each of the RGB components weighted to the first color by the provided weight.
@@ -66,5 +66,5 @@ function mix(weight: number | string, color: string, otherColor: string): string
 }
 
 // prettier-ignore
-const curriedMix = curry/* ::<number | string, string, string, string> */(mix)
+const curriedMix = curry/* ::<number | string, string, string, string> */(mix);
 export default curriedMix

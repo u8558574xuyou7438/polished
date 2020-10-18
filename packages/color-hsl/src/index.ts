@@ -38,7 +38,8 @@ export default function hsl(
     typeof lightness === 'number'
   ) {
     return hslToHex(value, saturation, lightness)
-  } else if (typeof value === 'object' && saturation === undefined && lightness === undefined) {
+  }
+  if (typeof value === 'object' && saturation === undefined && lightness === undefined) {
     return hslToHex(value.hue, value.saturation, value.lightness)
   }
 

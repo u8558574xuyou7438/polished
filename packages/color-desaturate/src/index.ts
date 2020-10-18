@@ -1,8 +1,8 @@
 // @flow
-import curry from '../../internals/_curry'
-import guard from '../../internals/_guard'
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
+import curry from '../../internals/_curry'
+import guard from '../../internals/_guard'
 
 /**
  * Decreases the intensity of a color. Its range is between 0 to 1. The first
@@ -38,5 +38,5 @@ function desaturate(amount: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedDesaturate = curry/* ::<number | string, string, string> */(desaturate)
+const curriedDesaturate = curry/* ::<number | string, string, string> */(desaturate);
 export default curriedDesaturate

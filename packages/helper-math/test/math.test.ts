@@ -1,6 +1,6 @@
 // @flow
-import math from '../src'
 import exponential from '@polished/preset-math-exponential'
+import math from '../src'
 
 describe('math', () => {
   it('should handle non-length units', () => {

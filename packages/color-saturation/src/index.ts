@@ -1,7 +1,7 @@
 // @flow
-import curry from '../../internals/_curry'
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
+import curry from '../../internals/_curry'
 
 /**
  * Sets the saturation of a color to the provided value. The saturation range can be
@@ -35,5 +35,5 @@ function setSaturation(saturation: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedSetSaturation = curry/* ::<number | string, string, string> */(setSaturation)
+const curriedSetSaturation = curry/* ::<number | string, string, string> */(setSaturation);
 export default curriedSetSaturation

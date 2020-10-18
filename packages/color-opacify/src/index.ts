@@ -1,8 +1,8 @@
 // @flow
-import curry from '../../internals/_curry'
-import guard from '../../internals/_guard'
 import rgba from '@polished/color-rgba'
 import parseToRgb from '@polished/color-parse-to-rgb'
+import curry from '../../internals/_curry'
+import guard from '../../internals/_guard'
 
 /**
  * Increases the opacity of a color. Its range for the amount is between 0 to 1.
@@ -43,5 +43,5 @@ function opacify(amount: number | string, color: string): string {
 }
 
 // prettier-ignore
-const curriedOpacify = curry/* ::<number | string, string, string> */(opacify)
+const curriedOpacify = curry/* ::<number | string, string, string> */(opacify);
 export default curriedOpacify

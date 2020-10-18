@@ -15,7 +15,7 @@ function generateSelectors(template: Function, state: InteractionState): string 
 function statefulSelectors(
   states: Array<InteractionState>,
   template: Function,
-  stateMap?: Array<InteractionState>,
+  stateMap?: Array<InteractionState>
 ): string {
   if (!template) throw new PolishedError(67)
   if (states.length === 0) return generateSelectors(template, null)
