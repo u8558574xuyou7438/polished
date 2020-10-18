@@ -1,7 +1,7 @@
 // @flow
 import curry from '../../internals/_curry'
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Sets the saturation of a color to the provided value. The saturation range can be
@@ -28,7 +28,7 @@ import toColorString from '@polished/color-to-color-string'
  */
 function setSaturation(saturation: number | string, color: string): string {
   if (color === 'transparent') return color
-  return toColorString({
+  return toString({
     ...parseToHsl(color),
     saturation: parseFloat(saturation),
   })

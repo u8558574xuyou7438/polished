@@ -13,14 +13,14 @@ import type { HslColor, HslaColor } from '../types/color'
  * @example
  * // Styles as object usage
  * const styles = {
- *   background: hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
- *   background: hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ *   background: hsltoString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: hsltoString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
  * }
  *
  * // styled-components usage
  * const div = styled.div`
- *   background: ${hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
- *   background: ${hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ *   background: ${hsltoString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${hsltoString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
  * `
  *
  * // CSS in JS Output
@@ -29,7 +29,7 @@ import type { HslColor, HslaColor } from '../types/color'
  *   background: "rgba(179,25,25,0.72)";
  * }
  */
-export default function hslToColorString(color: HslColor | HslaColor | number): string {
+export default function hslToString(color: HslColor | HslaColor | number): string {
   if (
     typeof color === 'object' &&
     typeof color.hue === 'number' &&

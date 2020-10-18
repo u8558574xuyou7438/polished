@@ -1,6 +1,6 @@
 // @flow
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Returns the complement of the provided color. This is identical to adjustHue(180, <color>).
@@ -27,7 +27,7 @@ import toColorString from '@polished/color-to-color-string'
 export default function complement(color: string): string {
   if (color === 'transparent') return color
   const hslColor = parseToHsl(color)
-  return toColorString({
+  return toString({
     ...hslColor,
     hue: (hslColor.hue + 180) % 360,
   })

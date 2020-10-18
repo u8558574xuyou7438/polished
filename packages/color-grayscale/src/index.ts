@@ -1,6 +1,6 @@
 // @flow
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Converts the color to a grayscale, by reducing its saturation to 0.
@@ -26,7 +26,7 @@ import toColorString from '@polished/color-to-color-string'
  */
 export default function grayscale(color: string): string {
   if (color === 'transparent') return color
-  return toColorString({
+  return toString({
     ...parseToHsl(color),
     saturation: 0,
   })

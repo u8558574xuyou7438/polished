@@ -13,14 +13,14 @@ import type { RgbColor, RgbaColor } from '../types/color'
  * @example
  * // Styles as object usage
  * const styles = {
- *   background: rgbToColorString({ red: 255, green: 205, blue: 100 }),
- *   background: rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ *   background: rgbtoString({ red: 255, green: 205, blue: 100 }),
+ *   background: rgbtoString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
  * }
  *
  * // styled-components usage
  * const div = styled.div`
- *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100 })};
- *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ *   background: ${rgbtoString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${rgbtoString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
  * `
  *
  * // CSS in JS Output
@@ -29,7 +29,7 @@ import type { RgbColor, RgbaColor } from '../types/color'
  *   background: "rgba(255,205,100,0.72)";
  * }
  */
-export default function rgbToColorString(color: RgbColor | RgbaColor): string {
+export default function rgbToString(color: RgbColor | RgbaColor): string {
   if (
     typeof color === 'object' &&
     typeof color.red === 'number' &&

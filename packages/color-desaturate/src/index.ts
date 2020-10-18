@@ -2,7 +2,7 @@
 import curry from '../../internals/_curry'
 import guard from '../../internals/_guard'
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Decreases the intensity of a color. Its range is between 0 to 1. The first
@@ -31,7 +31,7 @@ import toColorString from '@polished/color-to-color-string'
 function desaturate(amount: number | string, color: string): string {
   if (color === 'transparent') return color
   const hslColor = parseToHsl(color)
-  return toColorString({
+  return toString({
     ...hslColor,
     saturation: guard(0, 1, hslColor.saturation - parseFloat(amount)),
   })

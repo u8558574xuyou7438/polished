@@ -1,7 +1,7 @@
 // @flow
 import curry from '../../internals/_curry'
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Sets the hue of a color to the provided value. The hue range can be
@@ -28,7 +28,7 @@ import toColorString from '@polished/color-to-color-string'
  */
 function setHue(hue: number | string, color: string): string {
   if (color === 'transparent') return color
-  return toColorString({
+  return toString({
     ...parseToHsl(color),
     hue: parseFloat(hue),
   })

@@ -1,6 +1,6 @@
 // @flow
 import parseToRgb from '@polished/color-parse-to-rgb'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 
 /**
  * Inverts the red, green and blue values of a color.
@@ -29,7 +29,7 @@ export default function invert(color: string): string {
   if (color === 'transparent') return color
   // parse color string to rgb
   const value = parseToRgb(color)
-  return toColorString({
+  return toString({
     ...value,
     red: 255 - value.red,
     green: 255 - value.green,

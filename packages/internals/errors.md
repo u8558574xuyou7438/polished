@@ -32,7 +32,7 @@ Passed invalid arguments to rgba, please pass multiple numbers e.g. rgb(255, 205
 
 ## 8
 
-Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.
+Passed invalid argument to toString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.
 
 ## 9
 
@@ -181,11 +181,11 @@ Invalid value passed as base to modularScale, expected number or em/rem string b
 
 ## 45
 
-Passed invalid argument to hslToColorString, please pass a HslColor or HslaColor object.
+Passed invalid argument to hsltoString, please pass a HslColor or HslaColor object.
 
 ## 46
 
-Passed invalid argument to rgbToColorString, please pass a RgbColor or RgbaColor object.
+Passed invalid argument to rgbtoString, please pass a RgbColor or RgbaColor object.
 
 ## 47
 

@@ -16,7 +16,7 @@ const hslaRegex = /^hsla\(\s*(\d{0,3}[.]?[0-9]+)\s*,\s*(\d{1,3}[.]?[0-9]?)%\s*,\
 
 /**
  * Returns an RgbColor or RgbaColor object. This utility function is only useful
- * if want to extract a color component. With the color util `toColorString` you
+ * if want to extract a color component. With the color util `toString` you
  * can convert a RgbColor or RgbaColor object back to a string.
  *
  * @example

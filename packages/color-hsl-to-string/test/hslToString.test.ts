@@ -1,10 +1,10 @@
 // @flow
-import hslToColorString from '../src'
+import hslToString from '../src'
 
-describe('hslToColorString', () => {
+describe('hslToString', () => {
   it('should convert a HslColor to a reduced hex string', () => {
     expect({
-      background: hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
+      background: hslToString({ hue: 240, saturation: 1, lightness: 0.5 }),
     }).toEqual({
       background: '#00f',
     })
@@ -12,7 +12,7 @@ describe('hslToColorString', () => {
 
   it('should convert a HslColor to a hex string', () => {
     expect({
-      background: hslToColorString({
+      background: hslToString({
         hue: 360,
         saturation: 0.75,
         lightness: 0.4,
@@ -24,7 +24,7 @@ describe('hslToColorString', () => {
 
   it('should convert a HslaColor to a rgba string', () => {
     expect({
-      background: hslToColorString({
+      background: hslToString({
         hue: 360,
         saturation: 0.75,
         lightness: 0.4,
@@ -37,8 +37,8 @@ describe('hslToColorString', () => {
 
   it('should throw an error if anything else than a HslColor or HslaColor is provided', () => {
     // $FlowFixMe
-    expect(() => hslToColorString({ red: 255, green: 1, hue: 240 })).toThrow(
-      'Passed invalid argument to hslToColorString, please pass a HslColor or HslaColor object.'
+    expect(() => hslToString({ red: 255, green: 1, hue: 240 })).toThrow(
+      'Passed invalid argument to hslToString, please pass a HslColor or HslaColor object.'
     )
   })
 })

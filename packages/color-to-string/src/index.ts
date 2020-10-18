@@ -37,18 +37,18 @@ const isHsla = (color: Object): boolean =>
  * @example
  * // Styles as object usage
  * const styles = {
- *   background: toColorString({ red: 255, green: 205, blue: 100 }),
- *   background: toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
- *   background: toColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
- *   background: toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ *   background: toString({ red: 255, green: 205, blue: 100 }),
+ *   background: toString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ *   background: toString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: toString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
  * }
  *
  * // styled-components usage
  * const div = styled.div`
- *   background: ${toColorString({ red: 255, green: 205, blue: 100 })};
- *   background: ${toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
- *   background: ${toColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
- *   background: ${toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ *   background: ${toString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${toString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ *   background: ${toString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${toString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
  * `
  *
  * // CSS in JS Output
@@ -60,7 +60,7 @@ const isHsla = (color: Object): boolean =>
  * }
  */
 
-export default function toColorString(color: Object): string {
+export default function toString(color: Object): string {
   if (typeof color !== 'object') throw new PolishedError(8)
   if (isRgba(color)) return rgba(color)
   if (isRgb(color)) return rgb(color)

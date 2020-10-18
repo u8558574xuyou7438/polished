@@ -55,8 +55,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/color-hsl"
       },
       {
-        "name": "@polished/color-hsl-to-color-string",
-        "reference": "workspace:packages/color-hsl-to-color-string"
+        "name": "@polished/color-hsl-to-string",
+        "reference": "workspace:packages/color-hsl-to-string"
       },
       {
         "name": "@polished/color-hsla",
@@ -107,8 +107,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/color-rgb"
       },
       {
-        "name": "@polished/color-rgb-to-color-string",
-        "reference": "workspace:packages/color-rgb-to-color-string"
+        "name": "@polished/color-rgb-to-string",
+        "reference": "workspace:packages/color-rgb-to-string"
       },
       {
         "name": "@polished/color-rgba",
@@ -131,8 +131,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/color-tint"
       },
       {
-        "name": "@polished/color-to-color-string",
-        "reference": "workspace:packages/color-to-color-string"
+        "name": "@polished/color-to-string",
+        "reference": "workspace:packages/color-to-string"
       },
       {
         "name": "@polished/color-transparentize",
@@ -326,7 +326,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@polished/color-get-luminance", ["workspace:packages/color-get-luminance"]],
       ["@polished/color-grayscale", ["workspace:packages/color-grayscale"]],
       ["@polished/color-hsl", ["workspace:packages/color-hsl"]],
-      ["@polished/color-hsl-to-color-string", ["workspace:packages/color-hsl-to-color-string"]],
+      ["@polished/color-hsl-to-string", ["workspace:packages/color-hsl-to-string"]],
       ["@polished/color-hsla", ["workspace:packages/color-hsla"]],
       ["@polished/color-hue", ["workspace:packages/color-hue"]],
       ["@polished/color-invert", ["workspace:packages/color-invert"]],
@@ -339,13 +339,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@polished/color-parse-to-rgb", ["workspace:packages/color-parse-to-rgb"]],
       ["@polished/color-readable", ["workspace:packages/color-readable"]],
       ["@polished/color-rgb", ["workspace:packages/color-rgb"]],
-      ["@polished/color-rgb-to-color-string", ["workspace:packages/color-rgb-to-color-string"]],
+      ["@polished/color-rgb-to-string", ["workspace:packages/color-rgb-to-string"]],
       ["@polished/color-rgba", ["workspace:packages/color-rgba"]],
       ["@polished/color-saturate", ["workspace:packages/color-saturate"]],
       ["@polished/color-saturation", ["workspace:packages/color-saturation"]],
       ["@polished/color-shade", ["workspace:packages/color-shade"]],
       ["@polished/color-tint", ["workspace:packages/color-tint"]],
-      ["@polished/color-to-color-string", ["workspace:packages/color-to-color-string"]],
+      ["@polished/color-to-string", ["workspace:packages/color-to-string"]],
       ["@polished/color-transparentize", ["workspace:packages/color-transparentize"]],
       ["@polished/helper-css-variable", ["workspace:packages/helper-css-variable"]],
       ["@polished/helper-directional-property", ["workspace:packages/helper-directional-property"]],
@@ -3922,7 +3922,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-adjust-hue", "workspace:packages/color-adjust-hue"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -3933,7 +3933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-complement", "workspace:packages/color-complement"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -3944,7 +3944,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-darken", "workspace:packages/color-darken"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -3955,7 +3955,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-desaturate", "workspace:packages/color-desaturate"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -3986,7 +3986,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-grayscale", "workspace:packages/color-grayscale"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4000,11 +4000,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@polished/color-hsl-to-color-string", [
-        ["workspace:packages/color-hsl-to-color-string", {
-          "packageLocation": "./packages/color-hsl-to-color-string/",
+      ["@polished/color-hsl-to-string", [
+        ["workspace:packages/color-hsl-to-string", {
+          "packageLocation": "./packages/color-hsl-to-string/",
           "packageDependencies": [
-            ["@polished/color-hsl-to-color-string", "workspace:packages/color-hsl-to-color-string"],
+            ["@polished/color-hsl-to-string", "workspace:packages/color-hsl-to-string"],
             ["@polished/color-hsl", "workspace:packages/color-hsl"],
             ["@polished/color-hsla", "workspace:packages/color-hsla"]
           ],
@@ -4026,7 +4026,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-hue", "workspace:packages/color-hue"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4037,7 +4037,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-invert", "workspace:packages/color-invert"],
             ["@polished/color-parse-to-rgb", "workspace:packages/color-parse-to-rgb"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4048,7 +4048,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-lighten", "workspace:packages/color-lighten"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4059,7 +4059,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-lightness", "workspace:packages/color-lightness"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4135,11 +4135,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@polished/color-rgb-to-color-string", [
-        ["workspace:packages/color-rgb-to-color-string", {
-          "packageLocation": "./packages/color-rgb-to-color-string/",
+      ["@polished/color-rgb-to-string", [
+        ["workspace:packages/color-rgb-to-string", {
+          "packageLocation": "./packages/color-rgb-to-string/",
           "packageDependencies": [
-            ["@polished/color-rgb-to-color-string", "workspace:packages/color-rgb-to-color-string"],
+            ["@polished/color-rgb-to-string", "workspace:packages/color-rgb-to-string"],
             ["@polished/color-rgb", "workspace:packages/color-rgb"],
             ["@polished/color-rgba", "workspace:packages/color-rgba"]
           ],
@@ -4163,7 +4163,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-saturate", "workspace:packages/color-saturate"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4174,7 +4174,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/color-saturation", "workspace:packages/color-saturation"],
             ["@polished/color-parse-to-hsl", "workspace:packages/color-parse-to-hsl"],
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"]
+            ["@polished/color-to-string", "workspace:packages/color-to-string"]
           ],
           "linkType": "SOFT",
         }]
@@ -4199,11 +4199,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@polished/color-to-color-string", [
-        ["workspace:packages/color-to-color-string", {
-          "packageLocation": "./packages/color-to-color-string/",
+      ["@polished/color-to-string", [
+        ["workspace:packages/color-to-string", {
+          "packageLocation": "./packages/color-to-string/",
           "packageDependencies": [
-            ["@polished/color-to-color-string", "workspace:packages/color-to-color-string"],
+            ["@polished/color-to-string", "workspace:packages/color-to-string"],
             ["@polished/color-hsl", "workspace:packages/color-hsl"],
             ["@polished/color-hsla", "workspace:packages/color-hsla"],
             ["@polished/color-rgb", "workspace:packages/color-rgb"],

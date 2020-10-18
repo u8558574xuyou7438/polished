@@ -6,7 +6,7 @@ import type { HslColor, HslaColor } from '../types/color'
 
 /**
  * Returns an HslColor or HslaColor object. This utility function is only useful
- * if want to extract a color component. With the color util `toColorString` you
+ * if want to extract a color component. With the color util `toString` you
  * can convert a HslColor or HslaColor object back to a string.
  *
  * @example

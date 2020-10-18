@@ -28,6 +28,6 @@
   ],
   "dependencies": {
     "@polished/color-parse-to-rgb": "workspace:*",
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   }
 }

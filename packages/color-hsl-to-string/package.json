@@ -1,5 +1,5 @@
 {
-  "name": "@polished/color-rgb-to-color-string",
+  "name": "@polished/color-hsl-to-string",
   "version": "5.0.0",
   "description": "Changes the hue of a color.",
   "main": "src/index.ts",
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/styled-components/polished.git",
-    "directory": "packages/color-rgb-to-color-string"
+    "directory": "packages/color-hsl-to-string"
   },
   "keywords": [
     "styled-components",
@@ -27,7 +27,7 @@
     "typescript"
   ],
   "dependencies": {
-    "@polished/color-rgb": "workspace:*",
-    "@polished/color-rgba": "workspace:*"
+    "@polished/color-hsl": "workspace:*",
+    "@polished/color-hsla": "workspace:*"
   }
 }

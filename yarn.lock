@@ -2852,7 +2852,7 @@ __metadata:
   resolution: "@polished/color-adjust-hue@workspace:packages/color-adjust-hue"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2861,7 +2861,7 @@ __metadata:
   resolution: "@polished/color-complement@workspace:packages/color-complement"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2870,7 +2870,7 @@ __metadata:
   resolution: "@polished/color-darken@workspace:packages/color-darken"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2879,7 +2879,7 @@ __metadata:
   resolution: "@polished/color-desaturate@workspace:packages/color-desaturate"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2904,13 +2904,13 @@ __metadata:
   resolution: "@polished/color-grayscale@workspace:packages/color-grayscale"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@polished/color-hsl-to-color-string@workspace:packages/color-hsl-to-color-string":
+"@polished/color-hsl-to-string@workspace:packages/color-hsl-to-string":
   version: 0.0.0-use.local
-  resolution: "@polished/color-hsl-to-color-string@workspace:packages/color-hsl-to-color-string"
+  resolution: "@polished/color-hsl-to-string@workspace:packages/color-hsl-to-string"
   dependencies:
     "@polished/color-hsl": "workspace:*"
     "@polished/color-hsla": "workspace:*"
@@ -2934,7 +2934,7 @@ __metadata:
   resolution: "@polished/color-hue@workspace:packages/color-hue"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2943,7 +2943,7 @@ __metadata:
   resolution: "@polished/color-invert@workspace:packages/color-invert"
   dependencies:
     "@polished/color-parse-to-rgb": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2952,7 +2952,7 @@ __metadata:
   resolution: "@polished/color-lighten@workspace:packages/color-lighten"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -2961,7 +2961,7 @@ __metadata:
   resolution: "@polished/color-lightness@workspace:packages/color-lightness"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3014,9 +3014,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@polished/color-rgb-to-color-string@workspace:packages/color-rgb-to-color-string":
+"@polished/color-rgb-to-string@workspace:packages/color-rgb-to-string":
   version: 0.0.0-use.local
-  resolution: "@polished/color-rgb-to-color-string@workspace:packages/color-rgb-to-color-string"
+  resolution: "@polished/color-rgb-to-string@workspace:packages/color-rgb-to-string"
   dependencies:
     "@polished/color-rgb": "workspace:*"
     "@polished/color-rgba": "workspace:*"
@@ -3043,7 +3043,7 @@ __metadata:
   resolution: "@polished/color-saturate@workspace:packages/color-saturate"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3052,7 +3052,7 @@ __metadata:
   resolution: "@polished/color-saturation@workspace:packages/color-saturation"
   dependencies:
     "@polished/color-parse-to-hsl": "workspace:*"
-    "@polished/color-to-color-string": "workspace:*"
+    "@polished/color-to-string": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3072,9 +3072,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@polished/color-to-color-string@workspace:*, @polished/color-to-color-string@workspace:packages/color-to-color-string":
+"@polished/color-to-string@workspace:*, @polished/color-to-string@workspace:packages/color-to-string":
   version: 0.0.0-use.local
-  resolution: "@polished/color-to-color-string@workspace:packages/color-to-color-string"
+  resolution: "@polished/color-to-string@workspace:packages/color-to-string"
   dependencies:
     "@polished/color-hsl": "workspace:*"
     "@polished/color-hsla": "workspace:*"

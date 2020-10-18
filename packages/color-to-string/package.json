@@ -1,5 +1,5 @@
 {
-  "name": "@polished/color-to-color-string",
+  "name": "@polished/color-to-string",
   "version": "5.0.0",
   "description": "Changes the hue of a color.",
   "main": "src/index.ts",
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/styled-components/polished.git",
-    "directory": "packages/color-to-color-string"
+    "directory": "packages/color-to-string"
   },
   "keywords": [
     "styled-components",

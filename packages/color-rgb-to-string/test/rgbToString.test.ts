@@ -1,10 +1,10 @@
 // @flow
-import rgbToColorString from '../src'
+import rgbToString from '../src'
 
-describe('rgbToColorString', () => {
+describe('rgbToString', () => {
   it('should convert a RgbColor to a reduced hex string', () => {
     expect({
-      background: rgbToColorString({ red: 255, green: 255, blue: 255 }),
+      background: rgbToString({ red: 255, green: 255, blue: 255 }),
     }).toEqual({
       background: '#fff',
     })
@@ -12,7 +12,7 @@ describe('rgbToColorString', () => {
 
   it('should convert a RgbColor to a hex string', () => {
     expect({
-      background: rgbToColorString({ red: 255, green: 205, blue: 100 }),
+      background: rgbToString({ red: 255, green: 205, blue: 100 }),
     }).toEqual({
       background: '#ffcd64',
     })
@@ -20,7 +20,7 @@ describe('rgbToColorString', () => {
 
   it('should convert a RgbaColor to a rgba string', () => {
     expect({
-      background: rgbToColorString({
+      background: rgbToString({
         red: 255,
         green: 205,
         blue: 100,
@@ -33,7 +33,7 @@ describe('rgbToColorString', () => {
 
   it('should convert a RgbaColor with 0 alpha to a rgba string', () => {
     expect({
-      background: rgbToColorString({
+      background: rgbToString({
         red: 255,
         green: 205,
         blue: 100,
@@ -46,8 +46,8 @@ describe('rgbToColorString', () => {
 
   it('should throw an error if anything else than a RgbColor or RgbaColor is provided', () => {
     // $FlowFixMe
-    expect(() => rgbToColorString({ red: 255, green: 1, hue: 240 })).toThrow(
-      'Passed invalid argument to rgbToColorString, please pass a RgbColor or RgbaColor object.'
+    expect(() => rgbToString({ red: 255, green: 1, hue: 240 })).toThrow(
+      'Passed invalid argument to rgbToString, please pass a RgbColor or RgbaColor object.'
     )
   })
 })

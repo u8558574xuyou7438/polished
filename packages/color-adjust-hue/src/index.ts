@@ -1,6 +1,6 @@
 // @flow
 import parseToHsl from '@polished/color-parse-to-hsl'
-import toColorString from '@polished/color-to-color-string'
+import toString from '@polished/color-to-string'
 import curry from '../../internals/_curry'
 
 /**
@@ -30,7 +30,7 @@ import curry from '../../internals/_curry'
 function adjustHue(degree: number | string, color: string): string {
   if (color === 'transparent') return color
   const hslColor = parseToHsl(color)
-  return toColorString({
+  return toString({
     ...hslColor,
     hue: hslColor.hue + parseFloat(degree),
   })
