@@ -68,6 +68,5 @@ export default function toString(color: UnknownColor): string {
   if (isRgb(color)) return rgb(color)
   if (isHsla(color)) return hsla(color)
   if (isHsl(color)) return hsl(color)
-
   throw new PolishedError(8)
 }
