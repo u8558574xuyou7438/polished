@@ -5,25 +5,27 @@ import rgb from '@polished/color-rgb'
 import rgba from '@polished/color-rgba'
 import PolishedError from '../../internals/_errors'
 
-const isRgb = (color: Object): boolean =>
+import type { UnknownColor } from '../../types/color'
+
+const isRgb = (color: UnknownColor): boolean =>
   typeof color.red === 'number' &&
   typeof color.green === 'number' &&
   typeof color.blue === 'number' &&
   (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
 
-const isRgba = (color: Object): boolean =>
+const isRgba = (color: UnknownColor): boolean =>
   typeof color.red === 'number' &&
   typeof color.green === 'number' &&
   typeof color.blue === 'number' &&
   typeof color.alpha === 'number'
 
-const isHsl = (color: Object): boolean =>
+const isHsl = (color: UnknownColor): boolean =>
   typeof color.hue === 'number' &&
   typeof color.saturation === 'number' &&
   typeof color.lightness === 'number' &&
   (typeof color.alpha !== 'number' || typeof color.alpha === 'undefined')
 
-const isHsla = (color: Object): boolean =>
+const isHsla = (color: UnknownColor): boolean =>
   typeof color.hue === 'number' &&
   typeof color.saturation === 'number' &&
   typeof color.lightness === 'number' &&
@@ -60,7 +62,7 @@ const isHsla = (color: Object): boolean =>
  * }
  */
 
-export default function toString(color: Object): string {
+export default function toString(color: UnknownColor): string {
   if (typeof color !== 'object') throw new PolishedError(8)
   if (isRgba(color)) return rgba(color)
   if (isRgb(color)) return rgb(color)

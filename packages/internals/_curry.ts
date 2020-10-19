@@ -9,12 +9,8 @@ type CurriedFn2<A, B, C> = Fn1<A, Fn1<B, C>> & Fn2<A, B, C>
 // eslint-disable-next-line no-unused-vars
 type CurriedFn3<A, B, C, D> = Fn1<A, CurriedFn2<B, C, D>> & Fn2<A, B, Fn1<C, D>> & Fn3<A, B, C, D>
 
-// eslint-disable-next-line no-unused-vars
-declare function curry<A, B, C>(f: Fn2<A, B, C>): CurriedFn2<A, B, C>
-// eslint-disable-next-line no-redeclare
-declare function curry<A, B, C, D>(f: Fn3<A, B, C, D>): CurriedFn3<A, B, C, D>
-
-function curried(f: Function, length: number, acc: Array<any>): Function {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function curried(f: Fn1 | Fn2 | Fn3, length: number, acc: Array<any>): CurriedFn2 | CurriedFn3 {
   return function fn() {
     // eslint-disable-next-line prefer-rest-params
     const combined = acc.concat(Array.prototype.slice.call(arguments))
@@ -22,8 +18,13 @@ function curried(f: Function, length: number, acc: Array<any>): Function {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+declare function curry<A, B, C>(f: Fn2<A, B, C>): CurriedFn2<A, B, C>
 // eslint-disable-next-line no-redeclare
-export default function curry(f: Function): Function {
+declare function curry<A, B, C, D>(f: Fn3<A, B, C, D>): CurriedFn3<A, B, C, D>
+
+// eslint-disable-next-line no-redeclare
+export default function curry(f: Fn1 | Fn2 | Fn3): CurriedFn2 | CurriedFn3 {
   // eslint-disable-line no-redeclare
   return curried(f, f.length, [])
 }

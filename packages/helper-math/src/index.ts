@@ -4,8 +4,27 @@ import PolishedError from '../../internals/_errors'
 
 const unitRegExp = /((?!\w)a|na|hc|mc|dg|me[r]?|xe|ni(?![a-zA-Z])|mm|cp|tp|xp|q(?!s)|hv|xamv|nimv|wv|sm|s(?!\D|$)|ged|darg?|nrut)/g
 
+type MathFunction = (x: number, y?: number) => number
+
+interface Symbols {
+  symbols: {
+    [key: string]: {
+      postfix: {
+        symbol: string
+        f: MathFunction
+        notation: string
+        precedence: number
+        rightToLeft: number
+        argCount: number
+      }
+      symbol: string
+      regSymbol: string
+    }
+  }
+}
+
 // Merges additional math functionality into the defaults.
-function mergeSymbolMaps(additionalSymbols?: Object): Object {
+function mergeSymbolMaps(additionalSymbols?: Symbols): Symbols {
   const symbolMap = {}
   symbolMap.symbols = additionalSymbols
     ? { ...defaultSymbolMap.symbols, ...additionalSymbols.symbols }
@@ -14,13 +33,13 @@ function mergeSymbolMaps(additionalSymbols?: Object): Object {
   return symbolMap
 }
 
-function exec(operators: Array<any>, values: Array<number>): Array<number | string> {
+function exec(operators: Array<Symbols>, values: Array<number>): Array<number | string> {
   const op = operators.pop()
   values.push(op.f(...[].concat(...values.splice(-op.argCount))))
   return op.precedence
 }
 
-function calculate(expression: string, additionalSymbols?: Object): number {
+function calculate(expression: string, additionalSymbols?: Symbols): number {
   const symbolMap = mergeSymbolMaps(additionalSymbols)
 
   let match
@@ -131,7 +150,7 @@ function reverseString(str: string): string {
  *   fontSize: '11px',
  * }
  */
-export default function math(formula: string, additionalSymbols?: Object): string {
+export default function math(formula: string, additionalSymbols?: Symbols): string {
   const reversedFormula = reverseString(formula)
   const formulaMatch = reversedFormula.match(unitRegExp)
 

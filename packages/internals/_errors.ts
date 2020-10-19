@@ -42,6 +42,7 @@ function format(...args) {
  * @private
  */
 export default class PolishedError extends Error {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(code: string | number, ...args: Array<any>) {
     if (process.env.NODE_ENV === 'production') {
       super(

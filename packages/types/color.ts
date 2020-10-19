@@ -17,6 +17,25 @@ export type ContrastScores = {|
 |}
 
 /**
+ * @property {number | void}  red
+ * @property {number | void}  green
+ * @property {number | void}  blue
+ * @property {number | void}  hue
+ * @property {number | void}  saturation
+ * @property {number | void}  lightness
+ * @property {number | void}  alpha
+ */
+export type UnknownColor = {|
+  red: number | void,
+  green: number | void,
+  blue: number | void,
+  hue: number | void,
+  saturation: number | void,
+  lightness: number | void,
+  alpha: number | void
+|}
+
+/**
  * @property {number}  hue
  * @property {number}  saturation
  * @property {number}  lightness

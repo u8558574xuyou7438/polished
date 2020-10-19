@@ -24,7 +24,7 @@ const cssRegex = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/
  *   '--unit': 'px',
  * }
  */
-export default function getValueAndUnit(value: string | number): Array<any> {
+export default function getValueAndUnit(value: string | number): Array<string | number | void> {
   if (typeof value !== 'string') return [value, '']
   const matchedValue = value.match(cssRegex)
   if (matchedValue) return [parseFloat(value), matchedValue[2]]
