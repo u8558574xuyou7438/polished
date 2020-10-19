@@ -49,7 +49,7 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*.{ts,js}": "eslint --fix"
+    "*.{ts}": "eslint --fix"
   },
   "watch": {
     "build:lib": "src/**/*.ts"
