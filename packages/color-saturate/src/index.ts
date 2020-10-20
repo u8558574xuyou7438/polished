@@ -1,8 +1,8 @@
 // @flow
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
-import curry from '../../internals/_curry'
-import guard from '../../internals/_guard'
+import curry from '@internals/_curry'
+import guard from '@internals/_guard'
 
 /**
  * Increases the intensity of a color. Its range is between 0 to 1. The first

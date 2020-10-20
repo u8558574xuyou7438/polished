@@ -1,6 +1,6 @@
 // @flow
 import defaultSymbolMap from '@polished/preset-math-default'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 const unitRegExp = /((?!\w)a|na|hc|mc|dg|me[r]?|xe|ni(?![a-zA-Z])|mm|cp|tp|xp|q(?!s)|hv|xamv|nimv|wv|sm|s(?!\D|$)|ged|darg?|nrut)/g
 

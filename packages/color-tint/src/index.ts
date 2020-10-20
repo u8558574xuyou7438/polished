@@ -1,6 +1,6 @@
 // @flow
 import mix from '@polished/color-mix'
-import curry from '../../internals/_curry'
+import curry from '@internals/_curry'
 
 /**
  * Tints a color by mixing it with white. `tint` can produce

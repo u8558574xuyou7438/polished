@@ -1,7 +1,7 @@
 // @flow
-import hslToHex from '../../internals/_hslToHex'
-import hslToRgb from '../../internals/_hslToRgb'
-import PolishedError from '../../internals/_errors'
+import hslToHex from '@internals/_hslToHex'
+import hslToRgb from '@internals/_hslToRgb'
+import PolishedError from '@internals/_errors'
 
 import type { HslaColor } from '../types/color'
 

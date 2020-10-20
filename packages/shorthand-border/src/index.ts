@@ -1,5 +1,5 @@
 // @flow
-import capitalizeString from '../../internals/_capitalizeString'
+import capitalizeString from '@internals/_capitalizeString'
 
 import type { SideKeyword } from '../../types/sideKeyword'
 import type { Styles } from '../../types/style'

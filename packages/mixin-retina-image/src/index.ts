@@ -1,6 +1,6 @@
 // @flow
 import hiDPI from '@polished/mixin-hi-dpi'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { Styles } from '../../types/style'
 

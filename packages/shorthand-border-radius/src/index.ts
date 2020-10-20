@@ -1,6 +1,6 @@
 // @flow
-import capitalizeString from '../../internals/_capitalizeString'
-import PolishedError from '../../internals/_errors'
+import capitalizeString from '@internals/_capitalizeString'
+import PolishedError from '@internals/_errors'
 
 import type { Styles } from '../../types/style'
 

@@ -1,6 +1,6 @@
 // @flow
-import constructGradientValue from '../../internals/_constructGradientValue'
-import PolishedError from '../../internals/_errors'
+import constructGradientValue from '@internals/_constructGradientValue'
+import PolishedError from '@internals/_errors'
 
 import type { LinearGradientConfiguration } from '../../types/linearGradientConfiguration'
 import type { Styles } from '../../types/style'

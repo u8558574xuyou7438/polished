@@ -3331,6 +3331,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rollup/plugin-alias@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@rollup/plugin-alias@npm:3.1.1"
+  dependencies:
+    slash: ^3.0.0
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0
+  checksum: 785d8a4283e59bbd76447e2ea5128e34c9ebf59b626841a82d5c8366687439c2fe7d0690be04e73e51ada5264d1efdfd4de8ec2528f4f9428f9541040311262c
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.1":
   version: 5.2.1
   resolution: "@rollup/plugin-babel@npm:5.2.1"
@@ -12055,6 +12066,7 @@ fsevents@^1.2.7:
     "@babel/runtime": ^7.9.2
     "@commitlint/cli": ^11.0.0
     "@commitlint/config-conventional": ^11.0.0
+    "@rollup/plugin-alias": ^3.1.1
     "@rollup/plugin-babel": ^5.2.1
     "@rollup/plugin-node-resolve": ^9.0.0
     "@rollup/plugin-replace": ^2.3.2

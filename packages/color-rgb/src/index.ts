@@ -1,7 +1,7 @@
 // @flow
-import reduceHexValue from '../../internals/_reduceHexValue'
-import toHex from '../../internals/_numberToHex'
-import PolishedError from '../../internals/_errors'
+import reduceHexValue from '@internals/_reduceHexValue'
+import toHex from '@internals/_numberToHex'
+import PolishedError from '@internals/_errors'
 
 import type { RgbColor } from '../types/color'
 

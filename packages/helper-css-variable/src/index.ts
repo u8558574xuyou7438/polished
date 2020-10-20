@@ -1,5 +1,5 @@
 // @flow
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 const cssVariableRegex = /--[\S]*/g
 

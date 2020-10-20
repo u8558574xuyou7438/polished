@@ -1,6 +1,6 @@
 // @flow
 import parseToRgb from '@polished/color-parse-to-rgb'
-import rgbToHsl from '../../internals/_rgbToHsl'
+import rgbToHsl from '@internals/_rgbToHsl'
 
 import type { HslColor, HslaColor } from '../types/color'
 

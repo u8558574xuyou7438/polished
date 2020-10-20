@@ -1,6 +1,6 @@
 // @flow
-import hslToHex from '../../internals/_hslToHex'
-import PolishedError from '../../internals/_errors'
+import hslToHex from '@internals/_hslToHex'
+import PolishedError from '@internals/_errors'
 
 import type { HslColor } from '../types/color'
 

@@ -39,6 +39,11 @@ const getBabelOptions = ({ useESModules }, targets) => ({
     'annotate-pure-calls',
     'preval',
     ['@babel/transform-runtime', { useESModules }, '>0.5%, not dead, ie >= 11, not op_mini all'],
+    alias({
+      entries: [
+        { find: '@internals', replacement: './packages/internals' },
+      ]
+    })
     typescript(),
   ],
 })

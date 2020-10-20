@@ -1,6 +1,6 @@
 // @flow
 import getValueAndUnit from '@polished/helper-get-value-and-unit'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { ModularScaleRatio } from '../types/modularScaleRatio'
 

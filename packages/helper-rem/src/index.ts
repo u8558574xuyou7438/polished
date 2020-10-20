@@ -1,5 +1,5 @@
 // @flow
-import pixelsto from '../../internals/_pxto'
+import pixelsto from '@internals/_pxto'
 
 /**
  * Convert pixel value to rems. The default base value is 16px, but can be changed by passing a

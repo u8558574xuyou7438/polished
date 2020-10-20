@@ -412,6 +412,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.11.2"],
             ["@commitlint/cli", "npm:11.0.0"],
             ["@commitlint/config-conventional", "npm:11.0.0"],
+            ["@rollup/plugin-alias", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:3.1.1"],
             ["@rollup/plugin-babel", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:5.2.1"],
             ["@rollup/plugin-node-resolve", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:9.0.0"],
             ["@rollup/plugin-replace", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:2.3.3"],
@@ -4553,6 +4554,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@polished/shorthand-transitions", "workspace:packages/shorthand-transitions"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@rollup/plugin-alias", [
+        ["virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:3.1.1", {
+          "packageLocation": "./.yarn/$$virtual/@rollup-plugin-alias-virtual-9b231d69ad/0/cache/@rollup-plugin-alias-npm-3.1.1-e808d39c13-785d8a4283.zip/node_modules/@rollup/plugin-alias/",
+          "packageDependencies": [
+            ["@rollup/plugin-alias", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:3.1.1"],
+            ["@types/rollup", null],
+            ["rollup", "npm:2.27.1"],
+            ["slash", "npm:3.0.0"]
+          ],
+          "packagePeers": [
+            "@types/rollup",
+            "rollup"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@rollup/plugin-babel", [
@@ -14214,6 +14231,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.11.2"],
             ["@commitlint/cli", "npm:11.0.0"],
             ["@commitlint/config-conventional", "npm:11.0.0"],
+            ["@rollup/plugin-alias", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:3.1.1"],
             ["@rollup/plugin-babel", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:5.2.1"],
             ["@rollup/plugin-node-resolve", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:9.0.0"],
             ["@rollup/plugin-replace", "virtual:1c45dac994956a76d8f35b6aa20a6e176bc95894408639e93b59e73d75f79f7a3f0b9a1d35cd6fb1eaabe591ed34925364ffd8a9f88cbb71e1a562c4ef8ac32b#npm:2.3.3"],

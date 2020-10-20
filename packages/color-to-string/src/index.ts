@@ -3,7 +3,7 @@ import hsl from '@polished/color-hsl'
 import hsla from '@polished/color-hsla'
 import rgb from '@polished/color-rgb'
 import rgba from '@polished/color-rgba'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { UnknownColor } from '../../types/color'
 

@@ -1,7 +1,7 @@
 // @flow
 import parseToHsl from '@polished/color-parse-to-hsl'
 import toString from '@polished/color-to-string'
-import curry from '../../internals/_curry'
+import curry from '@internals/_curry'
 
 /**
  * Changes the hue of the color. Hue is a number between 0 to 360. The first

@@ -1,7 +1,7 @@
 // @flow
 import rgb from '@polished/color-rgb'
 import rgba from '@polished/color-rgba'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { RgbColor, RgbaColor } from '../types/color'
 

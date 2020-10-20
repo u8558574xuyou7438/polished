@@ -1,5 +1,5 @@
 // @flow
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { FontFaceConfiguration } from '../../types/fontFaceConfiguration'
 import type { Styles } from '../../types/style'

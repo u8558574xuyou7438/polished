@@ -1,6 +1,6 @@
 // @flow
 import type { Styles } from '../../types/style'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 /**
  * Accepts any number of transition values as parameters for creating a single transition statement. You may also pass an array of properties as the first parameter that you would like to apply the same transition values to (second parameter).

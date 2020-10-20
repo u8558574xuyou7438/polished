@@ -1,6 +1,6 @@
 // @flow
 import getValueAndUnit from '@polished/helper-get-value-and-unit'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 /**
  * Returns a CSS calc formula for linear interpolation of a property between two values. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px').

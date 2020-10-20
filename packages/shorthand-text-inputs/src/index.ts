@@ -1,5 +1,5 @@
 // @flow
-import statefulSelectors from '../../internals/_statefulSelectors'
+import statefulSelectors from '@internals/_statefulSelectors'
 
 import type { InteractionState } from '../../types/interactionState'
 

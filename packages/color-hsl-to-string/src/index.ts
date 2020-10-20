@@ -1,7 +1,7 @@
 // @flow
 import hsl from '@polished/color-hsl'
 import hsla from '@polished/color-hsla'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { HslColor, HslaColor } from '../types/color'
 

@@ -1,6 +1,6 @@
 // @flow
 import between from '@polished/mixin-between'
-import PolishedError from '../../internals/_errors'
+import PolishedError from '@internals/_errors'
 
 import type { FluidRangeConfiguration } from '../../types/fluidRangeConfiguration'
 import type { Styles } from '../../types/style'
