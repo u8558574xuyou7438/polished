@@ -139,6 +139,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/color-transparentize"
       },
       {
+        "name": "@polished/helper-compose",
+        "reference": "workspace:packages/helper-compose"
+      },
+      {
         "name": "@polished/helper-css-variable",
         "reference": "workspace:packages/helper-css-variable"
       },
@@ -347,6 +351,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@polished/color-tint", ["workspace:packages/color-tint"]],
       ["@polished/color-to-string", ["workspace:packages/color-to-string"]],
       ["@polished/color-transparentize", ["workspace:packages/color-transparentize"]],
+      ["@polished/helper-compose", ["workspace:packages/helper-compose"]],
       ["@polished/helper-css-variable", ["workspace:packages/helper-css-variable"]],
       ["@polished/helper-directional-property", ["workspace:packages/helper-directional-property"]],
       ["@polished/helper-ease-in", ["workspace:packages/helper-ease-in"]],
@@ -4222,6 +4227,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@polished/color-transparentize", "workspace:packages/color-transparentize"],
             ["@polished/color-parse-to-rgb", "workspace:packages/color-parse-to-rgb"],
             ["@polished/color-rgba", "workspace:packages/color-rgba"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/helper-compose", [
+        ["workspace:packages/helper-compose", {
+          "packageLocation": "./packages/helper-compose/",
+          "packageDependencies": [
+            ["@polished/helper-compose", "workspace:packages/helper-compose"]
           ],
           "linkType": "SOFT",
         }]

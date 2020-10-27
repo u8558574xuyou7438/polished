@@ -3092,6 +3092,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@polished/helper-compose@workspace:packages/helper-compose":
+  version: 0.0.0-use.local
+  resolution: "@polished/helper-compose@workspace:packages/helper-compose"
+  languageName: unknown
+  linkType: soft
+
 "@polished/helper-css-variable@workspace:packages/helper-css-variable":
   version: 0.0.0-use.local
   resolution: "@polished/helper-css-variable@workspace:packages/helper-css-variable"
