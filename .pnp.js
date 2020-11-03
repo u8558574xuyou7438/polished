@@ -183,6 +183,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/helper-modular-scale"
       },
       {
+        "name": "@polished/helper-pipe",
+        "reference": "workspace:packages/helper-pipe"
+      },
+      {
         "name": "@polished/helper-rem",
         "reference": "workspace:packages/helper-rem"
       },
@@ -362,6 +366,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@polished/helper-important", ["workspace:packages/helper-important"]],
       ["@polished/helper-math", ["workspace:packages/helper-math"]],
       ["@polished/helper-modular-scale", ["workspace:packages/helper-modular-scale"]],
+      ["@polished/helper-pipe", ["workspace:packages/helper-pipe"]],
       ["@polished/helper-rem", ["workspace:packages/helper-rem"]],
       ["@polished/helper-strip-unit", ["workspace:packages/helper-strip-unit"]],
       ["@polished/mixin-between", ["workspace:packages/mixin-between"]],
@@ -4235,7 +4240,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/helper-compose", {
           "packageLocation": "./packages/helper-compose/",
           "packageDependencies": [
-            ["@polished/helper-compose", "workspace:packages/helper-compose"]
+            ["@polished/helper-compose", "workspace:packages/helper-compose"],
+            ["@polished/color-lighten", "workspace:packages/color-lighten"],
+            ["@polished/color-saturate", "workspace:packages/color-saturate"],
+            ["@polished/color-tint", "workspace:packages/color-tint"]
           ],
           "linkType": "SOFT",
         }]
@@ -4330,6 +4338,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@polished/helper-modular-scale", "workspace:packages/helper-modular-scale"],
             ["@polished/helper-get-value-and-unit", "workspace:packages/helper-get-value-and-unit"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@polished/helper-pipe", [
+        ["workspace:packages/helper-pipe", {
+          "packageLocation": "./packages/helper-pipe/",
+          "packageDependencies": [
+            ["@polished/helper-pipe", "workspace:packages/helper-pipe"],
+            ["@polished/color-lighten", "workspace:packages/color-lighten"],
+            ["@polished/color-saturate", "workspace:packages/color-saturate"],
+            ["@polished/color-tint", "workspace:packages/color-tint"]
           ],
           "linkType": "SOFT",
         }]

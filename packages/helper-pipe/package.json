@@ -1,7 +1,7 @@
 {
-  "name": "@polished/helper-compose",
+  "name": "@polished/helper-pipe",
   "version": "5.0.0",
-  "description": "Helper for composing functions such as polished's color modules bottom to top.",
+  "description": "Helper for composing functions such as polished's color modules top to bottom.",
   "main": "src/index.ts",
   "author": "Brian Hough <hello@brianhough.co>",
   "homepage": "https://polished.js.org",
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/styled-components/polished.git",
-    "directory": "packages/helper-compose"
+    "directory": "packages/helper-pipe"
   },
   "keywords": [
     "styled-components",

@@ -2,11 +2,11 @@
 import lighten from '@polished/color-lighten'
 import saturate from '@polished/color-saturate'
 import tint from '@polished/color-tint'
-import compose from '../src'
+import pipe from '../src'
 
-describe('compose', () => {
-  it('should compose functions together bottom', () => {
-    const colorFunction = compose(tint(0.3), lighten(0.3), saturate(0.2))
+describe('pipe', () => {
+  it('should pipe functions together top to bottom', () => {
+    const colorFunction = pipe(saturate(0.2), lighten(0.3), tint(0.3))
     const saturatedColor = saturate(0.2, '#422')
     const lightenedColor = lighten(0.3, saturatedColor)
     const tintedColor = tint(0.3, lightenedColor)

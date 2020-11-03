@@ -2947,7 +2947,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@polished/color-lighten@workspace:packages/color-lighten":
+"@polished/color-lighten@workspace:*, @polished/color-lighten@workspace:packages/color-lighten":
   version: 0.0.0-use.local
   resolution: "@polished/color-lighten@workspace:packages/color-lighten"
   dependencies:
@@ -3038,7 +3038,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@polished/color-saturate@workspace:packages/color-saturate":
+"@polished/color-saturate@workspace:*, @polished/color-saturate@workspace:packages/color-saturate":
   version: 0.0.0-use.local
   resolution: "@polished/color-saturate@workspace:packages/color-saturate"
   dependencies:
@@ -3064,7 +3064,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@polished/color-tint@workspace:packages/color-tint":
+"@polished/color-tint@workspace:*, @polished/color-tint@workspace:packages/color-tint":
   version: 0.0.0-use.local
   resolution: "@polished/color-tint@workspace:packages/color-tint"
   dependencies:
@@ -3095,6 +3095,10 @@ __metadata:
 "@polished/helper-compose@workspace:packages/helper-compose":
   version: 0.0.0-use.local
   resolution: "@polished/helper-compose@workspace:packages/helper-compose"
+  dependencies:
+    "@polished/color-lighten": "workspace:*"
+    "@polished/color-saturate": "workspace:*"
+    "@polished/color-tint": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -3162,6 +3166,16 @@ __metadata:
   resolution: "@polished/helper-modular-scale@workspace:packages/helper-modular-scale"
   dependencies:
     "@polished/helper-get-value-and-unit": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@polished/helper-pipe@workspace:packages/helper-pipe":
+  version: 0.0.0-use.local
+  resolution: "@polished/helper-pipe@workspace:packages/helper-pipe"
+  dependencies:
+    "@polished/color-lighten": "workspace:*"
+    "@polished/color-saturate": "workspace:*"
+    "@polished/color-tint": "workspace:*"
   languageName: unknown
   linkType: soft
 
